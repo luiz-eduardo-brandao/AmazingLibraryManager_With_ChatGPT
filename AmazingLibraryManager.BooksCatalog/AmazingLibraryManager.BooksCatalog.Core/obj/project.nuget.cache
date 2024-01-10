@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "bap4mgedkBAnxKrs9/7EBbY4kyRJFfoDjJruReoTYisrS28akrz1yx3UMWSGq9LsMKy6YHO/p7a949TkefIFrA==",
+  "success": true,
+  "projectFilePath": "C:\\edu\\projects\\AmazingLibraryManager\\AmazingLibraryManager\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Core\\AmazingLibraryManager.BooksCatalog.Core.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://nuget.signa.net.br/webapi/nuget'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    }
+  ]
+}
