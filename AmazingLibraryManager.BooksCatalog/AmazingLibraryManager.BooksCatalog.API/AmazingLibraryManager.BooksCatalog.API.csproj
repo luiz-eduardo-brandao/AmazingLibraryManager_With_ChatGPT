@@ -12,7 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\AmazingLibraryManager.BooksCatalog.Application\AmazingLibraryManager.BooksCatalog.Application.csproj" />
+    <ProjectReference Include="..\AmazingLibraryManager.BooksCatalog.Infrastructure\AmazingLibraryManager.BooksCatalog.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
