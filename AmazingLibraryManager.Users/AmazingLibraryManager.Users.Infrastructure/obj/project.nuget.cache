@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "T6rjtrUEC7f2N3kDz2YmrzkWC08173hfPXwpa9ebOvfv6UEQVCXtwd/SisX5yjseol67XNXLuhhSHnEtkUp6eg==",
+  "dgSpecHash": "1c1Os8a/t3G/y6KpOCWfPoAUNXMpF9ciEbpbXAwRUE416nDYm9AkTwNQHDtYDXWfY51twL1SXi6LNAGTrN9o7g==",
   "success": true,
   "projectFilePath": "C:\\edu\\projects\\AmazingLibraryManager\\AmazingLibraryManager\\AmazingLibraryManager.Users\\AmazingLibraryManager.Users.Infrastructure\\AmazingLibraryManager.Users.Infrastructure.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Luiz Brandão\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+  ],
   "logs": [
     {
       "code": "NU1803",

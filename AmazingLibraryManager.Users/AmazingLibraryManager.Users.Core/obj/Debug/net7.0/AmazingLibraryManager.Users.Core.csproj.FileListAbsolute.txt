@@ -1,0 +1,11 @@
+C:\edu\projects\AmazingLibraryManager\AmazingLibraryManager\AmazingLibraryManager.Users\AmazingLibraryManager.Users.Core\bin\Debug\net7.0\AmazingLibraryManager.Users.Core.deps.json
+C:\edu\projects\AmazingLibraryManager\AmazingLibraryManager\AmazingLibraryManager.Users\AmazingLibraryManager.Users.Core\bin\Debug\net7.0\AmazingLibraryManager.Users.Core.dll
+C:\edu\projects\AmazingLibraryManager\AmazingLibraryManager\AmazingLibraryManager.Users\AmazingLibraryManager.Users.Core\bin\Debug\net7.0\AmazingLibraryManager.Users.Core.pdb
+C:\edu\projects\AmazingLibraryManager\AmazingLibraryManager\AmazingLibraryManager.Users\AmazingLibraryManager.Users.Core\obj\Debug\net7.0\AmazingLibraryManager.Users.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\edu\projects\AmazingLibraryManager\AmazingLibraryManager\AmazingLibraryManager.Users\AmazingLibraryManager.Users.Core\obj\Debug\net7.0\AmazingLibraryManager.Users.Core.AssemblyInfoInputs.cache
+C:\edu\projects\AmazingLibraryManager\AmazingLibraryManager\AmazingLibraryManager.Users\AmazingLibraryManager.Users.Core\obj\Debug\net7.0\AmazingLibraryManager.Users.Core.AssemblyInfo.cs
+C:\edu\projects\AmazingLibraryManager\AmazingLibraryManager\AmazingLibraryManager.Users\AmazingLibraryManager.Users.Core\obj\Debug\net7.0\AmazingLibraryManager.Users.Core.csproj.CoreCompileInputs.cache
+C:\edu\projects\AmazingLibraryManager\AmazingLibraryManager\AmazingLibraryManager.Users\AmazingLibraryManager.Users.Core\obj\Debug\net7.0\AmazingLibraryManager.Users.Core.dll
+C:\edu\projects\AmazingLibraryManager\AmazingLibraryManager\AmazingLibraryManager.Users\AmazingLibraryManager.Users.Core\obj\Debug\net7.0\refint\AmazingLibraryManager.Users.Core.dll
+C:\edu\projects\AmazingLibraryManager\AmazingLibraryManager\AmazingLibraryManager.Users\AmazingLibraryManager.Users.Core\obj\Debug\net7.0\AmazingLibraryManager.Users.Core.pdb
+C:\edu\projects\AmazingLibraryManager\AmazingLibraryManager\AmazingLibraryManager.Users\AmazingLibraryManager.Users.Core\obj\Debug\net7.0\ref\AmazingLibraryManager.Users.Core.dll

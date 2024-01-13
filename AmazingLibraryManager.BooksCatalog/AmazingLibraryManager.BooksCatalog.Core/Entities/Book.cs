@@ -2,18 +2,14 @@
 {
     public class Book : BaseEntity
     {
-        public Book(Book book)
+        public Book(Book book) : base()
         {
             Validate(book.Title, book.SubTitle, book.Author, book.PublishDate);
-
-            Id = Guid.NewGuid();
         }
 
-        public Book(string title, string subTitle, string author, DateTime publishDate)
+        public Book(string title, string subTitle, string author, DateTime publishDate) : base()
         {
             Validate(title, subTitle, author, publishDate);
-
-            Id = Guid.NewGuid();
         }
 
         public Book(Guid id, string title, string subTitle, string author, DateTime publishDate)
