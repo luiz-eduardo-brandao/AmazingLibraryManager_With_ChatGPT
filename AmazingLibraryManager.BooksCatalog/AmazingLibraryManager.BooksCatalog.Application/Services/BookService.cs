@@ -15,6 +15,21 @@ namespace AmazingLibraryManager.BooksCatalog.Application.Services
             _bookRepository = bookRepository;
         }
 
+        public async Task<List<Book>> GetAllBooks()
+        {
+            return await _bookRepository.GetAllBooks();
+        }
+
+        public async Task<List<Book>> GetAvailibleBooks()
+        {
+            return await _bookRepository.GetAvailibleBooks();
+        }
+
+        public async Task<Book?> GetById(Guid bookId)
+        {
+            return await _bookRepository.GetBookByIdAsync(bookId);
+        }
+
         public async Task<Book> AddBook(InsertBookInputModel model)
         {
             var book = new Book(model.ToEntity());
@@ -33,14 +48,9 @@ namespace AmazingLibraryManager.BooksCatalog.Application.Services
             return book;
         }
 
-        public async Task<List<Book>> GetAllBooks()
+        public async Task DeleteBook(Guid id) 
         {
-            return await _bookRepository.GetAvalibleBooks();
-        }
-
-        public async Task<Book?> GetById(Guid bookId)
-        {
-            return await _bookRepository.GetBookByIdAsync(bookId);
+            await _bookRepository.DeleteBookAsync(id);
         }
     }
 }

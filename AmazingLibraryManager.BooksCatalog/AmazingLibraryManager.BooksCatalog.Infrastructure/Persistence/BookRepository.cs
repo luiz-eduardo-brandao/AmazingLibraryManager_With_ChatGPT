@@ -13,16 +13,16 @@ namespace AmazingLibraryManager.BooksCatalog.Infrastructure.Persistence
             _books = new List<Book>();
         }
 
-        public Task AddBookAsync(Book book)
-        {
-            _books.Add(book);
-
-            return Task.CompletedTask;
-        }
-
-        public Task<List<Book>> GetAvalibleBooks()
+        public Task<List<Book>> GetAllBooks()
         {
             return Task.FromResult(_books);
+        }
+
+        public Task<List<Book>> GetAvailibleBooks()
+        {
+            var books = _books.Where(b => !b.IsDeleted).ToList();
+
+            return Task.FromResult(books);
         }
 
         public Task<Book?> GetBookByIdAsync(Guid id)
@@ -42,11 +42,29 @@ namespace AmazingLibraryManager.BooksCatalog.Infrastructure.Persistence
             throw new NotImplementedException();
         }
 
+        public Task AddBookAsync(Book book)
+        {
+            _books.Add(book);
+
+            return Task.CompletedTask;
+        }
+
         public Task UpdateBookAsync(Book book)
         {
             var result = _books.SingleOrDefault(b => b.Id == book.Id);
 
-            result = book;
+            result.Update(book);
+
+            return Task.CompletedTask;
+        }
+
+        public Task DeleteBookAsync(Guid id) 
+        {
+            var result = _books.SingleOrDefault(b => b.Id == id);
+
+            if (result is null) throw new NullReferenceException("There's no Book with this Id.");
+
+            result.Delete();
 
             return Task.CompletedTask;
         }

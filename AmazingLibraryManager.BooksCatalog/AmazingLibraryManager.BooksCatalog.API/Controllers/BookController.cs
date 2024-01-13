@@ -15,8 +15,23 @@ namespace AmazingLibraryManager.BooksCatalog.API.Controllers
             _bookService = bookService;
         }
 
+        [HttpGet("availible")]
+        public async Task<IActionResult> GetAvailible()
+        {
+            var result = await _bookService.GetAvailibleBooks();
+
+            if (result?.Count() > 0) 
+            { 
+                return Ok(result);
+            }
+            else
+            {
+                return BadRequest("No records found.");
+            }
+        }
+
         [HttpGet]
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> GetAll()
         {
             var result = await _bookService.GetAllBooks();
 
@@ -89,6 +104,21 @@ namespace AmazingLibraryManager.BooksCatalog.API.Controllers
                     return BadRequest("No records have been changed.");
                 }
 
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(Guid id) 
+        {
+            try 
+            {
+                await _bookService.DeleteBook(id);
+
+                return Ok("Book successfuly deleted.");
             }
             catch (Exception ex)
             {

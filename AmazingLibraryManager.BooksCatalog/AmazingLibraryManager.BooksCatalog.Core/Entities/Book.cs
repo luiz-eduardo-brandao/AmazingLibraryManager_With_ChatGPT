@@ -23,6 +23,15 @@
             Id = id;
         }
 
+        public void Update(Book book) 
+        {
+            Id = book.Id;
+            Title = book.Title;
+            SubTitle = book.SubTitle;
+            Author = book.Author;
+            PublishDate = book.PublishDate;
+        }
+
         public void Validate(string title, string subTitle, string author, DateTime publishDate) 
         {
             if (title is null)

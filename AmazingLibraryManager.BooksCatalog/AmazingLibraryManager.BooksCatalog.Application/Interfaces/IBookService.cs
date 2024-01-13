@@ -7,6 +7,8 @@ namespace AmazingLibraryManager.BooksCatalog.Application.Interfaces
     {
         Task<Book> AddBook(InsertBookInputModel model);
         Task<Book> UpdateBook(InsertBookInputModel model);
+        Task DeleteBook(Guid id);
+        Task<List<Book>> GetAvailibleBooks();
         Task<List<Book>> GetAllBooks();
         Task<Book?> GetById(Guid bookId);
     }
