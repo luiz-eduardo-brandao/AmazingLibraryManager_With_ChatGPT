@@ -4,24 +4,24 @@ namespace AmazingLibraryManager.BooksCatalog.UnitTests.Core.Entites
 {
     public class BookTests
     {
-        [Fact(DisplayName = "CreateBook_WithAllValidParameters_ResultSuccess")]
-        public void CreateBook_WithAllValidParameters_ReturnValidBook() 
+        [Fact(DisplayName = "CreateBook_Executed_ReturnBook")]
+        public void CreateBook_Executed_ReturnBook() 
         {
-            var book = new Book("Harry Potter", "E a Ordem da Fênix", "J.K Rolling", DateTime.Now);
+            // Arrange
+            var title = "Test Title";
+            var subTitle = "SubTitle Test";
+            var author = "Author Test";
+            var publishDate = DateTime.Now;
 
+            // Act
+            var book = new Book(title, subTitle, author, publishDate);
+
+            // Assert
             Assert.NotNull(book);
-
-            Assert.NotNull(book.Title);
-            Assert.NotEmpty(book.Title);
-
-            Assert.NotNull(book.SubTitle);
-            Assert.NotEmpty(book.SubTitle);
-
-            Assert.NotNull(book.Author);
-            Assert.NotEmpty(book.Author);
-
-            Assert.NotNull(book.PublishDate);
-            Assert.NotEmpty(book.PublishDate.ToString());
+            Assert.Equal(title, book.Title);
+            Assert.Equal(subTitle, book.SubTitle);
+            Assert.Equal(author, book.Author);
+            Assert.Equal(publishDate, book.PublishDate);
         }   
 
         [Fact(DisplayName = "CreateBook_WithoutTitle_ReturnArgumentException")]

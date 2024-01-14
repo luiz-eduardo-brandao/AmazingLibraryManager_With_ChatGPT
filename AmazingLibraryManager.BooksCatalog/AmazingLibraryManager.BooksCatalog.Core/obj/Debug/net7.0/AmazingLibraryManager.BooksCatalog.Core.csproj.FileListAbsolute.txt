@@ -9,3 +9,15 @@ C:\edu\projects\AmazingLibraryManager\AmazingLibraryManager\AmazingLibraryManage
 C:\edu\projects\AmazingLibraryManager\AmazingLibraryManager\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.Core\obj\Debug\net7.0\refint\AmazingLibraryManager.BooksCatalog.Core.dll
 C:\edu\projects\AmazingLibraryManager\AmazingLibraryManager\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.Core\obj\Debug\net7.0\AmazingLibraryManager.BooksCatalog.Core.pdb
 C:\edu\projects\AmazingLibraryManager\AmazingLibraryManager\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.Core\obj\Debug\net7.0\ref\AmazingLibraryManager.BooksCatalog.Core.dll
+c:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.Core\bin\Debug\net7.0\AmazingLibraryManager.BooksCatalog.Core.deps.json
+c:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.Core\bin\Debug\net7.0\AmazingLibraryManager.BooksCatalog.Core.dll
+c:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.Core\bin\Debug\net7.0\AmazingLibraryManager.BooksCatalog.Core.pdb
+c:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.Core\obj\Debug\net7.0\AmazingLibraryManager.BooksCatalog.Core.GeneratedMSBuildEditorConfig.editorconfig
+c:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.Core\obj\Debug\net7.0\AmazingLibraryManager.BooksCatalog.Core.AssemblyInfoInputs.cache
+c:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.Core\obj\Debug\net7.0\AmazingLibraryManager.BooksCatalog.Core.AssemblyInfo.cs
+c:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.Core\obj\Debug\net7.0\AmazingLibraryManager.BooksCatalog.Core.csproj.CoreCompileInputs.cache
+c:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.Core\obj\Debug\net7.0\AmazingLibraryManager.BooksCatalog.Core.sourcelink.json
+c:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.Core\obj\Debug\net7.0\AmazingLibraryManager.BooksCatalog.Core.dll
+c:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.Core\obj\Debug\net7.0\refint\AmazingLibraryManager.BooksCatalog.Core.dll
+c:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.Core\obj\Debug\net7.0\AmazingLibraryManager.BooksCatalog.Core.pdb
+c:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.Core\obj\Debug\net7.0\ref\AmazingLibraryManager.BooksCatalog.Core.dll

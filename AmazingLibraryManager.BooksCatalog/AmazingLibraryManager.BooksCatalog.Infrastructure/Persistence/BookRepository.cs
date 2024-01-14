@@ -4,7 +4,7 @@ using System.Net;
 
 namespace AmazingLibraryManager.BooksCatalog.Infrastructure.Persistence
 {
-    internal class BookRepository : IBookRepository
+    public class BookRepository : IBookRepository
     {
         private readonly List<Book> _books;
 

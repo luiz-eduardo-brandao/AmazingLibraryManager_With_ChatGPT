@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\edu\\projects\\AmazingLibraryManager\\AmazingLibraryManager\\AmazingLibraryManager.Users\\AmazingLibraryManager.Users.API\\AmazingLibraryManager.Users.API.csproj": {}
+    "C:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.Users\\AmazingLibraryManager.Users.API\\AmazingLibraryManager.Users.API.csproj": {}
   },
   "projects": {
-    "C:\\edu\\projects\\AmazingLibraryManager\\AmazingLibraryManager\\AmazingLibraryManager.Users\\AmazingLibraryManager.Users.API\\AmazingLibraryManager.Users.API.csproj": {
+    "C:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.Users\\AmazingLibraryManager.Users.API\\AmazingLibraryManager.Users.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\edu\\projects\\AmazingLibraryManager\\AmazingLibraryManager\\AmazingLibraryManager.Users\\AmazingLibraryManager.Users.API\\AmazingLibraryManager.Users.API.csproj",
+        "projectUniqueName": "C:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.Users\\AmazingLibraryManager.Users.API\\AmazingLibraryManager.Users.API.csproj",
         "projectName": "AmazingLibraryManager.Users.API",
-        "projectPath": "C:\\edu\\projects\\AmazingLibraryManager\\AmazingLibraryManager\\AmazingLibraryManager.Users\\AmazingLibraryManager.Users.API\\AmazingLibraryManager.Users.API.csproj",
+        "projectPath": "C:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.Users\\AmazingLibraryManager.Users.API\\AmazingLibraryManager.Users.API.csproj",
         "packagesPath": "C:\\Users\\Luiz Brandão\\.nuget\\packages\\",
-        "outputPath": "C:\\edu\\projects\\AmazingLibraryManager\\AmazingLibraryManager\\AmazingLibraryManager.Users\\AmazingLibraryManager.Users.API\\obj\\",
+        "outputPath": "C:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.Users\\AmazingLibraryManager.Users.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

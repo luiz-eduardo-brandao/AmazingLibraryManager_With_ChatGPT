@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\edu\\projects\\AmazingLibraryManager\\AmazingLibraryManager\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.API\\AmazingLibraryManager.BooksCatalog.API.csproj": {}
+    "C:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.API\\AmazingLibraryManager.BooksCatalog.API.csproj": {}
   },
   "projects": {
-    "C:\\edu\\projects\\AmazingLibraryManager\\AmazingLibraryManager\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.API\\AmazingLibraryManager.BooksCatalog.API.csproj": {
+    "C:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.API\\AmazingLibraryManager.BooksCatalog.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\edu\\projects\\AmazingLibraryManager\\AmazingLibraryManager\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.API\\AmazingLibraryManager.BooksCatalog.API.csproj",
+        "projectUniqueName": "C:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.API\\AmazingLibraryManager.BooksCatalog.API.csproj",
         "projectName": "AmazingLibraryManager.BooksCatalog.API",
-        "projectPath": "C:\\edu\\projects\\AmazingLibraryManager\\AmazingLibraryManager\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.API\\AmazingLibraryManager.BooksCatalog.API.csproj",
+        "projectPath": "C:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.API\\AmazingLibraryManager.BooksCatalog.API.csproj",
         "packagesPath": "C:\\Users\\Luiz Brandão\\.nuget\\packages\\",
-        "outputPath": "C:\\edu\\projects\\AmazingLibraryManager\\AmazingLibraryManager\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.API\\obj\\",
+        "outputPath": "C:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,11 +32,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\edu\\projects\\AmazingLibraryManager\\AmazingLibraryManager\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Application\\AmazingLibraryManager.BooksCatalog.Application.csproj": {
-                "projectPath": "C:\\edu\\projects\\AmazingLibraryManager\\AmazingLibraryManager\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Application\\AmazingLibraryManager.BooksCatalog.Application.csproj"
+              "C:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Application\\AmazingLibraryManager.BooksCatalog.Application.csproj": {
+                "projectPath": "C:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Application\\AmazingLibraryManager.BooksCatalog.Application.csproj"
               },
-              "C:\\edu\\projects\\AmazingLibraryManager\\AmazingLibraryManager\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Infrastructure\\AmazingLibraryManager.BooksCatalog.Infrastructure.csproj": {
-                "projectPath": "C:\\edu\\projects\\AmazingLibraryManager\\AmazingLibraryManager\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Infrastructure\\AmazingLibraryManager.BooksCatalog.Infrastructure.csproj"
+              "C:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Infrastructure\\AmazingLibraryManager.BooksCatalog.Infrastructure.csproj": {
+                "projectPath": "C:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Infrastructure\\AmazingLibraryManager.BooksCatalog.Infrastructure.csproj"
               }
             }
           }
@@ -83,14 +83,14 @@
         }
       }
     },
-    "C:\\edu\\projects\\AmazingLibraryManager\\AmazingLibraryManager\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Application\\AmazingLibraryManager.BooksCatalog.Application.csproj": {
+    "C:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Application\\AmazingLibraryManager.BooksCatalog.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\edu\\projects\\AmazingLibraryManager\\AmazingLibraryManager\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Application\\AmazingLibraryManager.BooksCatalog.Application.csproj",
+        "projectUniqueName": "C:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Application\\AmazingLibraryManager.BooksCatalog.Application.csproj",
         "projectName": "AmazingLibraryManager.BooksCatalog.Application",
-        "projectPath": "C:\\edu\\projects\\AmazingLibraryManager\\AmazingLibraryManager\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Application\\AmazingLibraryManager.BooksCatalog.Application.csproj",
+        "projectPath": "C:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Application\\AmazingLibraryManager.BooksCatalog.Application.csproj",
         "packagesPath": "C:\\Users\\Luiz Brandão\\.nuget\\packages\\",
-        "outputPath": "C:\\edu\\projects\\AmazingLibraryManager\\AmazingLibraryManager\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Application\\obj\\",
+        "outputPath": "C:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -111,8 +111,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\edu\\projects\\AmazingLibraryManager\\AmazingLibraryManager\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Core\\AmazingLibraryManager.BooksCatalog.Core.csproj": {
-                "projectPath": "C:\\edu\\projects\\AmazingLibraryManager\\AmazingLibraryManager\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Core\\AmazingLibraryManager.BooksCatalog.Core.csproj"
+              "C:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Core\\AmazingLibraryManager.BooksCatalog.Core.csproj": {
+                "projectPath": "C:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Core\\AmazingLibraryManager.BooksCatalog.Core.csproj"
               }
             }
           }
@@ -152,14 +152,14 @@
         }
       }
     },
-    "C:\\edu\\projects\\AmazingLibraryManager\\AmazingLibraryManager\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Core\\AmazingLibraryManager.BooksCatalog.Core.csproj": {
+    "C:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Core\\AmazingLibraryManager.BooksCatalog.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\edu\\projects\\AmazingLibraryManager\\AmazingLibraryManager\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Core\\AmazingLibraryManager.BooksCatalog.Core.csproj",
+        "projectUniqueName": "C:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Core\\AmazingLibraryManager.BooksCatalog.Core.csproj",
         "projectName": "AmazingLibraryManager.BooksCatalog.Core",
-        "projectPath": "C:\\edu\\projects\\AmazingLibraryManager\\AmazingLibraryManager\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Core\\AmazingLibraryManager.BooksCatalog.Core.csproj",
+        "projectPath": "C:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Core\\AmazingLibraryManager.BooksCatalog.Core.csproj",
         "packagesPath": "C:\\Users\\Luiz Brandão\\.nuget\\packages\\",
-        "outputPath": "C:\\edu\\projects\\AmazingLibraryManager\\AmazingLibraryManager\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Core\\obj\\",
+        "outputPath": "C:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -211,14 +211,14 @@
         }
       }
     },
-    "C:\\edu\\projects\\AmazingLibraryManager\\AmazingLibraryManager\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Infrastructure\\AmazingLibraryManager.BooksCatalog.Infrastructure.csproj": {
+    "C:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Infrastructure\\AmazingLibraryManager.BooksCatalog.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\edu\\projects\\AmazingLibraryManager\\AmazingLibraryManager\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Infrastructure\\AmazingLibraryManager.BooksCatalog.Infrastructure.csproj",
+        "projectUniqueName": "C:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Infrastructure\\AmazingLibraryManager.BooksCatalog.Infrastructure.csproj",
         "projectName": "AmazingLibraryManager.BooksCatalog.Infrastructure",
-        "projectPath": "C:\\edu\\projects\\AmazingLibraryManager\\AmazingLibraryManager\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Infrastructure\\AmazingLibraryManager.BooksCatalog.Infrastructure.csproj",
+        "projectPath": "C:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Infrastructure\\AmazingLibraryManager.BooksCatalog.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Luiz Brandão\\.nuget\\packages\\",
-        "outputPath": "C:\\edu\\projects\\AmazingLibraryManager\\AmazingLibraryManager\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Infrastructure\\obj\\",
+        "outputPath": "C:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -239,8 +239,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\edu\\projects\\AmazingLibraryManager\\AmazingLibraryManager\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Core\\AmazingLibraryManager.BooksCatalog.Core.csproj": {
-                "projectPath": "C:\\edu\\projects\\AmazingLibraryManager\\AmazingLibraryManager\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Core\\AmazingLibraryManager.BooksCatalog.Core.csproj"
+              "C:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Core\\AmazingLibraryManager.BooksCatalog.Core.csproj": {
+                "projectPath": "C:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Core\\AmazingLibraryManager.BooksCatalog.Core.csproj"
               }
             }
           }

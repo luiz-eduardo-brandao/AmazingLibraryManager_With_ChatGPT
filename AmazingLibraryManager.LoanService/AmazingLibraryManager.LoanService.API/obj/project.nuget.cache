@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mvLbLmSar5AWKor1dciKoxnzbEd+1lxfKPGkLIMomd8a/izYxGl98j75fmAgB6TTI5cO9O8rLRVh3aV85Ss5Xw==",
+  "dgSpecHash": "L2xXwXd6Q0K4Y+vG8PbvH7RBiGF8+kbBRv+4VBfCTb0Z2trXNRNC5AoKWxH6K7lUZNN7wm9YkNpL2LqWYnjRCw==",
   "success": true,
-  "projectFilePath": "C:\\edu\\projects\\AmazingLibraryManager\\AmazingLibraryManager\\AmazingLibraryManager.LoanService\\AmazingLibraryManager.LoanService.API\\AmazingLibraryManager.LoanService.API.csproj",
+  "projectFilePath": "C:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.LoanService\\AmazingLibraryManager.LoanService.API\\AmazingLibraryManager.LoanService.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Luiz Brandão\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.13\\microsoft.aspnetcore.openapi.7.0.13.nupkg.sha512",
     "C:\\Users\\Luiz Brandão\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

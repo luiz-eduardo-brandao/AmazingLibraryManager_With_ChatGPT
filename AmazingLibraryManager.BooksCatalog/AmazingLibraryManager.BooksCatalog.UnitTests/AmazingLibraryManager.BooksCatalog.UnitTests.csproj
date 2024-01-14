@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.6.0" />
+    <PackageReference Include="Moq" Version="4.16.1" />
     <PackageReference Include="xunit" Version="2.4.2" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.5">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -24,5 +25,7 @@
 
    <ItemGroup>
     <ProjectReference Include="..\AmazingLibraryManager.BooksCatalog.Core\AmazingLibraryManager.BooksCatalog.Core.csproj" />
+    <ProjectReference Include="..\AmazingLibraryManager.BooksCatalog.Application\AmazingLibraryManager.BooksCatalog.Application.csproj" />
+    <ProjectReference Include="..\AmazingLibraryManager.BooksCatalog.Infrastructure\AmazingLibraryManager.BooksCatalog.Infrastructure.csproj" />
   </ItemGroup>
 </Project>

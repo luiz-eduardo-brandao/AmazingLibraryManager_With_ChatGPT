@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ItT/j1bNyq02210YHE8B2L+7SpqihR5Plvkg/4CXVK2mIIWVzs4xrlEdZ5iU4uUHogmm+nE+H2Ezl6UTk1/NMg==",
+  "dgSpecHash": "39JVx4/TZgJIEK7aF1LlGqQpGIrUvBKt3nBn+I0rKrJIbLNgiqAQhlSIfpJEIzMoa0C8hzcrbe5oZUOBa8VIaw==",
   "success": true,
-  "projectFilePath": "C:\\edu\\projects\\AmazingLibraryManager\\AmazingLibraryManager\\AmazingLibraryManager.Users\\AmazingLibraryManager.Users.Application\\AmazingLibraryManager.Users.Application.csproj",
+  "projectFilePath": "C:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.Users\\AmazingLibraryManager.Users.Application\\AmazingLibraryManager.Users.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Luiz Brandão\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
   ],

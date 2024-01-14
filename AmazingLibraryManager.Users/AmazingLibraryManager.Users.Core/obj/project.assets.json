@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\edu\\projects\\AmazingLibraryManager\\AmazingLibraryManager\\AmazingLibraryManager.Users\\AmazingLibraryManager.Users.Core\\AmazingLibraryManager.Users.Core.csproj",
+      "projectUniqueName": "C:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.Users\\AmazingLibraryManager.Users.Core\\AmazingLibraryManager.Users.Core.csproj",
       "projectName": "AmazingLibraryManager.Users.Core",
-      "projectPath": "C:\\edu\\projects\\AmazingLibraryManager\\AmazingLibraryManager\\AmazingLibraryManager.Users\\AmazingLibraryManager.Users.Core\\AmazingLibraryManager.Users.Core.csproj",
+      "projectPath": "C:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.Users\\AmazingLibraryManager.Users.Core\\AmazingLibraryManager.Users.Core.csproj",
       "packagesPath": "C:\\Users\\Luiz Brandão\\.nuget\\packages\\",
-      "outputPath": "C:\\edu\\projects\\AmazingLibraryManager\\AmazingLibraryManager\\AmazingLibraryManager.Users\\AmazingLibraryManager.Users.Core\\obj\\",
+      "outputPath": "C:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.Users\\AmazingLibraryManager.Users.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
