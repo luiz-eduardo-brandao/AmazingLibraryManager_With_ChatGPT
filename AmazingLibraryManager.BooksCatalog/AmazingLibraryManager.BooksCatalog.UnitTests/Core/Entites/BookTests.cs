@@ -4,8 +4,8 @@ namespace AmazingLibraryManager.BooksCatalog.UnitTests.Core.Entites
 {
     public class BookTests
     {
-        [Fact(DisplayName = "CreateBook_Executed_ReturnBook")]
-        public void CreateBook_Executed_ReturnBook() 
+        [Fact(DisplayName = "ValidBook_CreateBook_ReturnValidBook")]
+        public void ValidBook_NewBookExecuted_ReturnValidBook() 
         {
             // Arrange
             var title = "Test Title";
@@ -24,24 +24,24 @@ namespace AmazingLibraryManager.BooksCatalog.UnitTests.Core.Entites
             Assert.Equal(publishDate, book.PublishDate);
         }   
 
-        [Fact(DisplayName = "CreateBook_WithoutTitle_ReturnArgumentException")]
-        public void CreateBook_WithoutTitle_ReturnArgumentException() 
+        [Fact(DisplayName = "CreateBook_WithNullTitle_ReturnArgumentException")]
+        public void CreateBook_WithNullTitle_ReturnArgumentException() 
         {
-            Action action = () => new Book(null, "E a Ordem da Fênix", "J.K Rolling", DateTime.Now);
+            Action action = () => new Book(null, "Test Sub Title", "Test Author", DateTime.Now);
 
             Assert.Throws<ArgumentException>(action);
         }   
             
-        [Fact(DisplayName = "CreateBook_WithoutSubTitle_ReturnArgumentException")]
-        public void CreateBook_WithoutSubTitle_ReturnArgumentException() 
+        [Fact(DisplayName = "CreateBook_WithNullSubTitle_ReturnArgumentException")]
+        public void CreateBook_WithNullSubTitle_ReturnArgumentException() 
         {
-            Action action = () => new Book("Test", null, "J.K Rolling", DateTime.Now);
+            Action action = () => new Book("Test", null, "Test Author", DateTime.Now);
 
             Assert.Throws<ArgumentException>(action);
         }   
 
-        [Fact(DisplayName = "CreateBook_WithoutAuthor_ReturnArgumentException")]
-        public void CreateBook_WithoutAuthor_ReturnArgumentException() 
+        [Fact(DisplayName = "CreateBook_WithEmptyAuthor_ReturnArgumentException")]
+        public void CreateBook_WithEmptyAuthor_ReturnArgumentException() 
         {
             Action action = () => new Book("Test", "SubTitle", "", DateTime.Now);
 
@@ -59,7 +59,7 @@ namespace AmazingLibraryManager.BooksCatalog.UnitTests.Core.Entites
         [Fact(DisplayName = "CreateBook_WithShortSubTitle_ReturnArgumentException")]
         public void CreateBook_WithShortSubTitle_ReturnArgumentException() 
         {
-            Action action = () => new Book("Test", "T", "J.K Rolling", DateTime.Now);
+            Action action = () => new Book("Test", "T", "Test Author", DateTime.Now);
 
             Assert.Throws<ArgumentException>(action);
         }   

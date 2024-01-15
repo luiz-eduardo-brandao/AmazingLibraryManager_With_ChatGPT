@@ -10,7 +10,16 @@ namespace AmazingLibraryManager.BooksCatalog.Infrastructure.Persistence
 
         public BookRepository()
         {
-            _books = new List<Book>();
+            _books = new List<Book> 
+            {
+                new Book(Guid.NewGuid(), "Harry Potter", "E a Pedra Filosofal", "J.K Rolling", DateTime.Today.AddYears(-20)),
+                new Book(Guid.NewGuid(), "Harry Potter", "E a Câmara Secreta", "J.K Rolling", DateTime.Today.AddYears(-19)),
+                new Book(Guid.NewGuid(), "Harry Potter", "E o Prisioneiro de Askaban", "J.K Rolling", DateTime.Today.AddYears(-18)),
+                new Book(Guid.NewGuid(), "Harry Potter", "E o Cálice de Fogo", "J.K Rolling", DateTime.Today.AddYears(-17)),
+                new Book(Guid.NewGuid(), "Harry Potter", "E a Ordem da Fênix", "J.K Rolling", DateTime.Today.AddYears(-16)),
+                new Book(Guid.NewGuid(), "Harry Potter", "E o Enigma do Princípe", "J.K Rolling", DateTime.Today.AddYears(-15)),
+                new Book(Guid.NewGuid(), "Harry Potter", "E as Relíquias da Morte", "J.K Rolling", DateTime.Today.AddYears(-14))
+            };    
         }
 
         public Task<List<Book>> GetAllBooks()
@@ -61,8 +70,6 @@ namespace AmazingLibraryManager.BooksCatalog.Infrastructure.Persistence
         public Task DeleteBookAsync(Guid id) 
         {
             var result = _books.SingleOrDefault(b => b.Id == id);
-
-            if (result is null) throw new NullReferenceException("There's no Book with this Id.");
 
             result.Delete();
 

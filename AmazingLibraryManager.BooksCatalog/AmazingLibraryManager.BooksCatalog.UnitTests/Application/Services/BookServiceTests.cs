@@ -1,81 +1,93 @@
-using System.Runtime.Serialization;
 using AmazingLibraryManager.BooksCatalog.Application.InputModels;
 using AmazingLibraryManager.BooksCatalog.Application.Services;
 using AmazingLibraryManager.BooksCatalog.Core.Entities;
-using AmazingLibraryManager.BooksCatalog.Infrastructure.Persistence;
+using AmazingLibraryManager.BooksCatalog.Core.Repositories;
+using AutoFixture;
+using Moq;
+using Shouldly;
 
 
 namespace AmazingLibraryManager.BooksCatalog.UnitTests.Application.Services
 {
     public class BookServiceTests
     {
-        [Fact(DisplayName = "UpdateBook_Executed_ReturnBookUpdated")]
-        public async void UpdateBook_Executed_ReturnBookUpdated() 
+        [Fact(DisplayName = "ValidBook_AddIsCalled_ReturnValidBookViewModel")]
+        public async void ValidBook_AddIsCalled_ReturnValidBookViewModel() 
         {
             // Arrange
-            var title = "first title";
-            var subTitle = "first subtitle";
-            var author = "first author";
-            var publishDate = DateTime.Now;
-            
-            var insertBookInputModel = new InsertBookInputModel{
-                Title = title,
-                SubTitle = subTitle,
-                Author = author,
-                PublishDate = publishDate
-            };
+            var insertBookInputModel = new Fixture().Create<InsertBookInputModel>();
 
-            var newTitle = "new title";
-            var newSubTitle = "new subtitle";
-            var newAuthor = "new author";
-            var newPublishDate = DateTime.Now.AddDays(2);
+            var bookRepositoryMock = new Mock<IBookRepository>();
 
-            var updateBookInputModel = new InsertBookInputModel{
-                Title = newTitle,
-                SubTitle = newSubTitle,
-                Author = newAuthor,
-                PublishDate = newPublishDate
-            };
-
-            var repository = new BookRepository();
-            var service = new BookService(repository);
+            var bookService = new BookService(bookRepositoryMock.Object);
 
             // Act
-            var resultAdd = await service.AddBook(insertBookInputModel);
-
-            var firstBook = service.GetById(resultAdd.Id);
-
-            updateBookInputModel.Id = resultAdd.Id;
-
-            var resultUpdate = await service.UpdateBook(updateBookInputModel);
-
-            var secondBook = service.GetById(resultUpdate.Id);
+            var result = await bookService.AddBook(insertBookInputModel);
 
             // Assert
-            Assert.NotEqual(firstBook, secondBook);
+
+            // xUnit
+            Assert.Equal(insertBookInputModel.Title, result.Title);
+            Assert.Equal(insertBookInputModel.SubTitle, result.SubTitle);
+            Assert.Equal(insertBookInputModel.Author, result.Author);
+            Assert.Equal(insertBookInputModel.PublishDate, result.PublishDate);
+
+            // Shoudly
+            result.Title.ShouldBe(insertBookInputModel.Title);
+            result.SubTitle.ShouldBe(insertBookInputModel.SubTitle);
+            result.Author.ShouldBe(insertBookInputModel.Author);
+            result.PublishDate.ShouldBe(insertBookInputModel.PublishDate);
+
+            bookRepositoryMock.Verify(br => br.AddBookAsync(It.IsAny<Book>()), Times.Once);
         }
 
-        [Fact(DisplayName = "CreateThreeBooks_Executed_ReturnThreeBooks")]
-        public async void CreateThreeBooks_Executed_ReturnThreeBooks() 
-        {   
+        [Fact(DisplayName = "UpdateBookAuthor_UpdateIsCalled_ReturnNewValidBookViewModel")]
+        public async void UpdateBookAuthor_UpdateIsCalled_ReturnNewValidBookViewModel() 
+        {
             // Arrange
-            var books = new List<Book>
-            {
-                new Book("Test 1", "Desc 1", "Test 1", DateTime.Now),
-                new Book("Test 2", "Desc 2", "Test 2", DateTime.Now),
-                new Book("Test 3", "Desc 3", "Test 3", DateTime.Now),
-            };
+            var addBookInputModel = new Fixture().Create<InsertBookInputModel>();
+            var updateBookInputModel = addBookInputModel;
 
-            var repository = new BookRepository();
-            var service = new BookService(repository);
+            var bookRepositoryMock = new Mock<IBookRepository>();
+
+            var bookService = new BookService(bookRepositoryMock.Object);
 
             // Act
-            foreach (var book in books) await repository.AddBookAsync(book);
-            
-            var result = await service.GetAllBooks();
-            
+            var addResult = await bookService.AddBook(addBookInputModel);
+
+            updateBookInputModel.Id = addResult.Id;
+            updateBookInputModel.Author = "update author";
+
+            var updateResult = await bookService.UpdateBook(updateBookInputModel);
+
             // Assert
-            Assert.Equal(books, result);
+            Assert.Equal(addResult.Title, updateResult.Title);
+            Assert.Equal(addResult.SubTitle, updateResult.SubTitle);
+            Assert.NotEqual(addResult.Author, updateResult.Author);
+            Assert.Equal(addResult.PublishDate, updateResult.PublishDate);
+
+            bookRepositoryMock.Verify(br => br.AddBookAsync(It.IsAny<Book>()), Times.Once);
+            bookRepositoryMock.Verify(br => br.UpdateBookAsync(It.IsAny<Book>()), Times.Once);
+        }
+
+        [Fact(DisplayName = "DeleteNonExistentBook_DeleteIsCalled_ThrowException")]
+        public void DeleteNonExistentBook_DeleteIsCalled_ThrowException() 
+        {
+            // Arrange
+            Guid bookId = Guid.NewGuid();
+
+            var bookRepositoryMock = new Mock<IBookRepository>();
+
+            var bookService = new BookService(bookRepositoryMock.Object);
+
+            // Act + Assert
+            // var exception = Assert.ThrowsAsync<NullReferenceException>(() => bookService.DeleteBook(bookId));
+
+            // Assert.Equal("There's no Book with this Id.", exception.Result.Message);
+
+            Should.ThrowAsync<NullReferenceException>(
+                () => bookService.DeleteBook(bookId))
+                .Result.Message.ShouldBe("There's no Book with this Id.");
         }
     }
 }

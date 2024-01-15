@@ -2,7 +2,6 @@
 using AmazingLibraryManager.BooksCatalog.Application.Interfaces;
 using AmazingLibraryManager.BooksCatalog.Core.Entities;
 using AmazingLibraryManager.BooksCatalog.Core.Repositories;
-using System.ComponentModel.DataAnnotations;
 
 namespace AmazingLibraryManager.BooksCatalog.Application.Services
 {
@@ -50,6 +49,12 @@ namespace AmazingLibraryManager.BooksCatalog.Application.Services
 
         public async Task DeleteBook(Guid id) 
         {
+            var result = await GetById(id);
+
+            if (result is null) throw new NullReferenceException("There's no Book with this Id.");
+
+            if (result.IsDeleted) throw new InvalidOperationException("Book has already deleted.");
+
             await _bookRepository.DeleteBookAsync(id);
         }
     }
