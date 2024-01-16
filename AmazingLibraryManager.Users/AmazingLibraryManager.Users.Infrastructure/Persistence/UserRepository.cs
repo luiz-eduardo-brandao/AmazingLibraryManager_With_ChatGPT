@@ -9,7 +9,11 @@ namespace AmazingLibraryManager.Users.Infrastructure.Persistence
 
         public UserRepository()
         {
-            _users = new List<User>();
+            _users = new List<User> 
+            {
+                new User(Guid.NewGuid(), "Admin", "admin@localhost.com", "122345567891"),
+                new User(Guid.NewGuid(), "User", "user@localhost.com", "198765432112")
+            };
         }
 
         public Task<List<User?>> GetAvailiblesAsync()
@@ -26,7 +30,7 @@ namespace AmazingLibraryManager.Users.Infrastructure.Persistence
 
         public Task<User?> GetByIdAsync(Guid id)
         {
-            var result = _users.SingleOrDefault(u => u.Id = id);
+            var result = _users.SingleOrDefault(u => u.Id == id);
 
             return Task.FromResult(result);
         }
@@ -40,18 +44,14 @@ namespace AmazingLibraryManager.Users.Infrastructure.Persistence
 
         public async Task UpdateUserAsync(User user)
         {
-            var result = await GetByIdAsync(user.Id);
+            var result = _users.SingleOrDefault(u => u.Id == user.Id);
 
-            if (result is null) throw new NullReferenceException("There's no User with this id.");
-
-            user.Update(user);
+            result.Update(user);
         }
         
         public async Task DeleteUserAsync(Guid id)
         {
-            var user = await GetByIdAsync(id);
-
-            if (user is null) throw new NullReferenceException("There's no User with this id.");
+            var user = _users.SingleOrDefault(u => u.Id == id);
 
             user.Delete();
         }

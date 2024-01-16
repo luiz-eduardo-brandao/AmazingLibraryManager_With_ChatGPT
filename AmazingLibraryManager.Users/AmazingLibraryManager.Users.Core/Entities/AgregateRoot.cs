@@ -1,3 +1,4 @@
+using System.Text.Json;
 using AmazingLibraryManager.Users.Core.Events;
 
 namespace AmazingLibraryManager.Users.Core.Entities
@@ -11,8 +12,12 @@ namespace AmazingLibraryManager.Users.Core.Entities
 
         public List<IEvent> Events { get; private set; }
 
-        public void AddEvent(IEvent @event) 
+        protected void AddEvent(IEvent @event) 
         {
+            var json = JsonSerializer.Serialize(@event);
+
+            Console.WriteLine("AddEvent: " + json);
+
             Events.Add(@event);
         }
     }

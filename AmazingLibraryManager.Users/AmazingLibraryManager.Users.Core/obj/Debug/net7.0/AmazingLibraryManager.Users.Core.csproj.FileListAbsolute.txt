@@ -9,3 +9,15 @@ C:\edu\projects\AmazingLibraryManager\AmazingLibraryManager\AmazingLibraryManage
 C:\edu\projects\AmazingLibraryManager\AmazingLibraryManager\AmazingLibraryManager.Users\AmazingLibraryManager.Users.Core\obj\Debug\net7.0\refint\AmazingLibraryManager.Users.Core.dll
 C:\edu\projects\AmazingLibraryManager\AmazingLibraryManager\AmazingLibraryManager.Users\AmazingLibraryManager.Users.Core\obj\Debug\net7.0\AmazingLibraryManager.Users.Core.pdb
 C:\edu\projects\AmazingLibraryManager\AmazingLibraryManager\AmazingLibraryManager.Users\AmazingLibraryManager.Users.Core\obj\Debug\net7.0\ref\AmazingLibraryManager.Users.Core.dll
+C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.Users\AmazingLibraryManager.Users.Core\bin\Debug\net7.0\AmazingLibraryManager.Users.Core.deps.json
+C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.Users\AmazingLibraryManager.Users.Core\bin\Debug\net7.0\AmazingLibraryManager.Users.Core.dll
+C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.Users\AmazingLibraryManager.Users.Core\bin\Debug\net7.0\AmazingLibraryManager.Users.Core.pdb
+C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.Users\AmazingLibraryManager.Users.Core\obj\Debug\net7.0\AmazingLibraryManager.Users.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.Users\AmazingLibraryManager.Users.Core\obj\Debug\net7.0\AmazingLibraryManager.Users.Core.AssemblyInfoInputs.cache
+C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.Users\AmazingLibraryManager.Users.Core\obj\Debug\net7.0\AmazingLibraryManager.Users.Core.AssemblyInfo.cs
+C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.Users\AmazingLibraryManager.Users.Core\obj\Debug\net7.0\AmazingLibraryManager.Users.Core.csproj.CoreCompileInputs.cache
+C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.Users\AmazingLibraryManager.Users.Core\obj\Debug\net7.0\AmazingLibraryManager.Users.Core.sourcelink.json
+C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.Users\AmazingLibraryManager.Users.Core\obj\Debug\net7.0\AmazingLibraryManager.Users.Core.dll
+C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.Users\AmazingLibraryManager.Users.Core\obj\Debug\net7.0\refint\AmazingLibraryManager.Users.Core.dll
+C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.Users\AmazingLibraryManager.Users.Core\obj\Debug\net7.0\AmazingLibraryManager.Users.Core.pdb
+C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.Users\AmazingLibraryManager.Users.Core\obj\Debug\net7.0\ref\AmazingLibraryManager.Users.Core.dll

@@ -53,7 +53,7 @@ namespace AmazingLibraryManager.Users.Core.Entities
                 throw new InvalidOperationException("Phone number is invalid. Please put a correct number to register.");
 
             if (!email.Contains("@") || !email.Contains(".com"))
-                throw new InvalidOperationException("Email is invalid. Please put a correct number to register.");
+                throw new InvalidOperationException("Email is invalid. Please put a correct email to register.");
             
             Name = name;
             Email = email;
