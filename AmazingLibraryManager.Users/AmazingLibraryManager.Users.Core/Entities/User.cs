@@ -1,14 +1,14 @@
-using AmazingLibraryManager.Users.Core.Events;
-
 namespace AmazingLibraryManager.Users.Core.Entities
 {
-    public class User : AgregateRoot
+    public class User : AggregateRoot
     {
         public User(string name, string email, string phoneNumber) : base()
         {
             Validate(name, email, phoneNumber);
 
-            AddEvent(new UserCreated(Id, Name, Email, PhoneNumber));
+            // var json = JsonSerializer.Serialize(new UserCreated(Id, Name, Email, PhoneNumber));
+
+            // AddEvent(json);
         }
 
         public User(Guid id, string name, string email, string phoneNumber) : base()
@@ -17,7 +17,9 @@ namespace AmazingLibraryManager.Users.Core.Entities
 
             Id = id;
 
-            AddEvent(new UserUpdated(Id, Name, Email, PhoneNumber));
+            // var json = JsonSerializer.Serialize(new UserUpdated(Id, Name, Email, PhoneNumber));
+
+            // AddEvent(json);
         }
 
         public void Update(User user) 
@@ -32,7 +34,13 @@ namespace AmazingLibraryManager.Users.Core.Entities
         {
             IsDeleted = true;
 
-            AddEvent(new UserDeleted(Id));
+            // var user = new UserDeleted(Id);
+
+            // var json = JsonSerializer.Serialize(user);
+
+            // Console.WriteLine("UserDeleted: " + json);
+
+            // AddEvent(json);
         }
 
         public void Validate(string name, string email, string phoneNumber)

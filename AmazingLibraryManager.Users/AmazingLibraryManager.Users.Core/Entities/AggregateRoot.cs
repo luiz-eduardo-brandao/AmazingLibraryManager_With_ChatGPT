@@ -3,16 +3,17 @@ using AmazingLibraryManager.Users.Core.Events;
 
 namespace AmazingLibraryManager.Users.Core.Entities
 {
-    public class AgregateRoot : BaseEntity
+    public class AggregateRoot : BaseEntity
     {
-        public AgregateRoot() : base()
+        public AggregateRoot() : base()
         {
-            Events = new List<IEvent>();
+            // Events = new List<IEvent>();
+            Events = new List<string>();
         }
 
-        public List<IEvent> Events { get; private set; }
+        public List<string> Events { get; private set; }
 
-        protected void AddEvent(IEvent @event) 
+        protected void AddEvent(string @event) 
         {
             var json = JsonSerializer.Serialize(@event);
 

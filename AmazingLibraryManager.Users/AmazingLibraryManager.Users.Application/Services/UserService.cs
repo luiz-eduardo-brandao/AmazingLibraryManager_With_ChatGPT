@@ -1,5 +1,6 @@
 using AmazingLibraryManager.Users.Application.InputModels;
 using AmazingLibraryManager.Users.Application.Interfaces;
+using AmazingLibraryManager.Users.Application.MappingExtensions;
 using AmazingLibraryManager.Users.Core.Entities;
 using AmazingLibraryManager.Users.Core.Repositories;
 
@@ -35,7 +36,9 @@ namespace AmazingLibraryManager.Users.Application.Services
 
         public async Task<User> AddUser(AddUserInputModel model)
         {
-            var user = new User(model.Name, model.Email, model.PhoneNumber);
+            var user = model.ToUser();
+
+            // var user = new User(model.Name, model.Email, model.PhoneNumber); 
 
             await _userRepository.AddUserAsync(user);
 

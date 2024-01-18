@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AmazingLibraryManager.Users.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e4dd4c273af83c8a9381e7cc366d916fe1be6e4a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c873798d1de20e43fa4d6f81ef16a09509143171")]
 [assembly: System.Reflection.AssemblyProductAttribute("AmazingLibraryManager.Users.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AmazingLibraryManager.Users.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
