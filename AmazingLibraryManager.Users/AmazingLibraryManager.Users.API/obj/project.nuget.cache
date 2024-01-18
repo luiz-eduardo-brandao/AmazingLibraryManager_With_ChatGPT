@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "fMFV5ir2nb8u3Zbz0992W9mYiH7PKnIGtcLZ8Um+Ndcfxy+RYU6MguS9aictqNC0YjroSjhDIVl7WtcIZuUeDg==",
+  "dgSpecHash": "4uhlYkM8poyZ8VDjY9cUfQfp/RCxELZKFVjeweQxJq0qS0P58Tt0e9OVbV7nQ1tPY4BUUZ840pmeFnpPfEVwvw==",
   "success": true,
   "projectFilePath": "C:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.Users\\AmazingLibraryManager.Users.API\\AmazingLibraryManager.Users.API.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\Luiz Brandão\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\Luiz Brandão\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\Luiz Brandão\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\Luiz Brandão\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
     "C:\\Users\\Luiz Brandão\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "C:\\Users\\Luiz Brandão\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "C:\\Users\\Luiz Brandão\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",

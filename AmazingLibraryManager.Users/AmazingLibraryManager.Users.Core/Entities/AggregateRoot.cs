@@ -1,4 +1,3 @@
-using System.Text.Json;
 using AmazingLibraryManager.Users.Core.Events;
 
 namespace AmazingLibraryManager.Users.Core.Entities
@@ -7,18 +6,13 @@ namespace AmazingLibraryManager.Users.Core.Entities
     {
         public AggregateRoot() : base()
         {
-            // Events = new List<IEvent>();
-            Events = new List<string>();
+            Events = new List<IEvent>();
         }
 
-        public List<string> Events { get; private set; }
+        public List<IEvent> Events { get; private set; }
 
-        protected void AddEvent(string @event) 
+        protected void AddEvent(IEvent @event) 
         {
-            var json = JsonSerializer.Serialize(@event);
-
-            Console.WriteLine("AddEvent: " + json);
-
             Events.Add(@event);
         }
     }

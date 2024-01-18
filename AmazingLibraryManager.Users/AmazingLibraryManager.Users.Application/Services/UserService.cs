@@ -42,6 +42,11 @@ namespace AmazingLibraryManager.Users.Application.Services
 
             await _userRepository.AddUserAsync(user);
 
+            foreach (var @event in user.Events)
+            {
+                // _bus.Publish(@event);
+            }
+
             return user;
         }
 
@@ -53,6 +58,11 @@ namespace AmazingLibraryManager.Users.Application.Services
 
             await _userRepository.UpdateUserAsync(user);
 
+            foreach (var @event in user.Events)
+            {
+                // _bus.Publish(@event);
+            }
+
             return user;
         }
 
@@ -63,6 +73,11 @@ namespace AmazingLibraryManager.Users.Application.Services
             if (user.IsDeleted) throw new InvalidOperationException("User has already been deleted.");
 
             await _userRepository.DeleteUserAsync(id);
+
+            foreach (var @event in user.Events)
+            {
+                // _bus.Publish(@event);
+            }
         }
     }
 }
