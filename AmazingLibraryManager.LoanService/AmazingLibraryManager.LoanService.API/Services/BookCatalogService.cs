@@ -32,5 +32,24 @@ namespace AmazingLibraryManager.LoanService.API.Services
                 throw new InvalidOperationException(message);
             }
         }
+
+        public async Task<Book> GetById(Guid id) 
+        {
+            try 
+            {
+                var result = await _client.GetById(id);
+
+                if (result is null) throw new NullReferenceException("There Book doesn't exist.");
+
+                return result;
+            }
+            catch (ApiException ex) 
+            {
+                var content = ex.GetContentAsAsync<Dictionary<string, string>>();
+                var message = content.Result?.FirstOrDefault(pair => pair.Key == "message").Value;
+
+                throw new InvalidOperationException(message);
+            }
+        }
     }
 }

@@ -7,5 +7,6 @@ namespace AmazingLibraryManager.LoanService.API.Domain.Repositories
         Task<List<BookLoan>> GetAllAsync();
         Task<BookLoan> GetByUserIdAsync(Guid id);
         Task AddBookLoan(BookLoan bookLoan);
+        Task UpdateBookLoan(BookLoan bookLoan);
     }
 }

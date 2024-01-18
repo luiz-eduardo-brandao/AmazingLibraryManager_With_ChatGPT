@@ -50,5 +50,12 @@ namespace AmazingLibraryManager.LoanService.API.Infrastructure.Persistence
 
             return Task.CompletedTask;
         }
+
+        public async Task UpdateBookLoan(BookLoan bookLoan) 
+        {
+            var result = await GetByUserIdAsync(bookLoan.User.Id);
+
+            result.AddBooks(bookLoan.Books);
+        }
     }
 }
