@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace AmazingLibraryManager.LoanService.API.Domain.Entities
+namespace AmazingLibraryManager.LoanService.API.Services
 {
-    public class Loan
+    public class UserService
     {
         
     }

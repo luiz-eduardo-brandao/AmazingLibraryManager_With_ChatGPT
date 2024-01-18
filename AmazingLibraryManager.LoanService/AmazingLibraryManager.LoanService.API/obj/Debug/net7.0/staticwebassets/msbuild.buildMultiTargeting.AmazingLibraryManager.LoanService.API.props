@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\AmazingLibraryManager.LoanService.API.props" />
+</Project>

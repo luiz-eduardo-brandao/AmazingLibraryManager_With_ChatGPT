@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Jn64vvYzmMlowW1l8D0kYyKrY8qZYeS7FzdkwQIm60E=",
+  "Source": "AmazingLibraryManager.LoanService.API",
+  "BasePath": "_content/AmazingLibraryManager.LoanService.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
