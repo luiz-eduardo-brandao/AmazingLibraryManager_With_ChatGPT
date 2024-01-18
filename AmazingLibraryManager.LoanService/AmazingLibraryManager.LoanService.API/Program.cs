@@ -12,6 +12,7 @@ builder.Services.AddExternalApiClients(builder.Configuration);
 builder.Services.AddSingleton<IBookLoanRepository, BookLoanRepository>();
 builder.Services.AddScoped<IBookLoanService, BookLoanService>();
 builder.Services.AddScoped<IBookCatalogService, BookCatalogService>();
+builder.Services.AddScoped<IUserService, UserService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

@@ -5,7 +5,7 @@ namespace AmazingLibraryManager.LoanService.API.DataAccess.Interfaces
 {
     public interface IUsersClient
     {
-        [Get("/availibles")]
+        [Get("/user/availibles")]
         Task<IEnumerable<User>> GetAvailibleUsers();
     }
 }

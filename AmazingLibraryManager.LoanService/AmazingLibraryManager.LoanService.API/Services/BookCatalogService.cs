@@ -29,7 +29,7 @@ namespace AmazingLibraryManager.LoanService.API.Services
                 var content = ex.GetContentAsAsync<Dictionary<string, string>>();
                 var message = content.Result?.FirstOrDefault(pair => pair.Key == "message").Value;
 
-                throw new Exception(message);
+                throw new InvalidOperationException(message);
             }
         }
     }

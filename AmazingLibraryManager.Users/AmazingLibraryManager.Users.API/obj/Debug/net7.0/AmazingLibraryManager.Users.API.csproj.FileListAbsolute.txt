@@ -38,3 +38,4 @@ C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.Users\Amazin
 C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.Users\AmazingLibraryManager.Users.API\obj\Debug\net7.0\AmazingLibraryManager.Users.API.pdb
 C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.Users\AmazingLibraryManager.Users.API\obj\Debug\net7.0\AmazingLibraryManager.Users.API.genruntimeconfig.cache
 C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.Users\AmazingLibraryManager.Users.API\obj\Debug\net7.0\ref\AmazingLibraryManager.Users.API.dll
+C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.Users\AmazingLibraryManager.Users.API\bin\Debug\net7.0\Newtonsoft.Json.dll
