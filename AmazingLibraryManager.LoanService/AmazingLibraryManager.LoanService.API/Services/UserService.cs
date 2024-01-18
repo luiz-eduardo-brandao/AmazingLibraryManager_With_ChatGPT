@@ -20,7 +20,26 @@ namespace AmazingLibraryManager.LoanService.API.Services
             {
                 var result = await _client.GetAvailibleUsers();
 
-                if (result is null) throw new NullReferenceException("There aren't availible books.");
+                if (result is null) throw new NullReferenceException("There aren't availible Users.");
+
+                return result;
+            }
+            catch (ApiException ex) 
+            {
+                var content = ex.GetContentAsAsync<Dictionary<string, string>>();
+                var message = content.Result?.FirstOrDefault(pair => pair.Key == "message").Value;
+
+                throw new InvalidOperationException(message);
+            }
+        }
+
+        public async Task<User> GetUserById(Guid id) 
+        {
+            try 
+            {
+                var result = await _client.GetById(id);
+
+                if (result is null) throw new NullReferenceException("This User doesn't exist.");
 
                 return result;
             }

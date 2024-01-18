@@ -1,3 +1,4 @@
+using AmazingLibraryManager.LoanService.API.Models.InputModels;
 using AmazingLibraryManager.LoanService.API.Services.IServices;
 using Microsoft.AspNetCore.Mvc;
 
@@ -37,6 +38,21 @@ namespace AmazingLibraryManager.LoanService.API.Controllers
             catch (Exception ex) 
             {
                 return NotFound(ex.Message);
+            }
+        }
+
+        [HttpPost("{userId}")]
+        public async Task<IActionResult> Post(Guid userId, [FromBody] BookLoanInputModel model) 
+        {
+            try
+            {
+                await _bookLoanService.AddBookLoan(userId, model);
+
+                return Ok("Book Loan added with success.");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
             }
         }
     }

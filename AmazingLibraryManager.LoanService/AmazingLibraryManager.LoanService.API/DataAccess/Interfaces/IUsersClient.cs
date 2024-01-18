@@ -7,5 +7,8 @@ namespace AmazingLibraryManager.LoanService.API.DataAccess.Interfaces
     {
         [Get("/user/availibles")]
         Task<IEnumerable<User>> GetAvailibleUsers();
+
+        [Get("/user/{id}")]
+        Task<User> GetById(Guid id);
     }
 }

@@ -5,5 +5,6 @@ namespace AmazingLibraryManager.LoanService.API.Services.IServices
     public interface IUserService
     {
         Task<IEnumerable<User>> GetAvailibleUsers();
+        Task<User> GetUserById(Guid id);
     }
 }
