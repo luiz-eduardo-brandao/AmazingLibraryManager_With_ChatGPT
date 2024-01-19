@@ -75,10 +75,10 @@ namespace AmazingLibraryManager.LoanService.API.Services
 
             foreach (var bookid in model.BookIds) 
             {
-                if (await VerifyBookExistsInUserLoan(userId, bookid)) 
-                {
-                    await _bookLoanRepository.ReturnBookFromLoan(userId, bookid);
-                }
+                if (!await VerifyBookExistsInUserLoan(userId, bookid)) 
+                    throw new InvalidOperationException("This Book doesn't exist.");
+                    
+                await _bookLoanRepository.ReturnBookFromLoan(userId, bookid); 
             }
         }
 

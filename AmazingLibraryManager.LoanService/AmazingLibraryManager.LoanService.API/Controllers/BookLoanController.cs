@@ -56,8 +56,8 @@ namespace AmazingLibraryManager.LoanService.API.Controllers
             }
         }
 
-        [HttpDelete("{userId}")]
-        public async Task<IActionResult> Delete(Guid userId, [FromBody] BookLoanInputModel model) 
+        [HttpPut("return/{userId}")]
+        public async Task<IActionResult> Put(Guid userId, [FromBody] BookLoanInputModel model) 
         {
             try
             {
