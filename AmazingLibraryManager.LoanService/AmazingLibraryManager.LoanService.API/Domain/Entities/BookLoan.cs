@@ -12,6 +12,11 @@ namespace AmazingLibraryManager.LoanService.API.Domain.Entities
             IsEnabled = true;
         }
 
+        public void AddBook(Book book) 
+        {
+            Books.Add(book);
+        }
+
         public void AddBooks(List<Book> books) 
         {
             foreach (var book in books) 

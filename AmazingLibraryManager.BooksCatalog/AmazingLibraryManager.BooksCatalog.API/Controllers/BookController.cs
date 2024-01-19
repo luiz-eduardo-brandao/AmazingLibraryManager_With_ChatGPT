@@ -56,7 +56,7 @@ namespace AmazingLibraryManager.BooksCatalog.API.Controllers
             }
             else
             {
-                return NotFound("No records found.");
+                return NotFound("This Book doesn't exist.");
             }
         }
 

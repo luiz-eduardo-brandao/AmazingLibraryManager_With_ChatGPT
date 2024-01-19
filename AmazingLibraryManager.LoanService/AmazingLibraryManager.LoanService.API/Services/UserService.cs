@@ -37,16 +37,19 @@ namespace AmazingLibraryManager.LoanService.API.Services
         {
             try 
             {
-                var result = await _client.GetById(id);
+                var response = await _client.GetById(id);
 
-                if (result is null) throw new NullReferenceException("This User doesn't exist.");
+                if (response is null) throw new InvalidOperationException("This User doesn't exist.");
 
-                return result;
+                if (!response.IsSuccessStatusCode) throw new InvalidOperationException(response.Error.Content);
+
+                return response.Content;
             }
             catch (ApiException ex) 
             {
                 var content = ex.GetContentAsAsync<Dictionary<string, string>>();
-                var message = content.Result?.FirstOrDefault(pair => pair.Key == "message").Value;
+                var message = content.Result?.FirstOrDefault(pair => pair.Key == "message").Value 
+                    ?? "An error occured. Please contact the system admin.";
 
                 throw new InvalidOperationException(message);
             }

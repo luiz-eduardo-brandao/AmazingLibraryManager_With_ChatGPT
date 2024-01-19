@@ -38,24 +38,46 @@ namespace AmazingLibraryManager.LoanService.API.Services
 
         public async Task AddBookLoan(Guid userId, BookLoanInputModel model) 
         {
-            var result = await _bookLoanRepository.GetByUserIdAsync(userId);
+            if (await VerifyUserAlreadyHasLoan(userId)) 
+            {
+                foreach (var bookid in model.BookIds) 
+                {
+                    if (await VerifyBookExistsInUserLoan(userId, bookid)) continue;
+
+                    var newBook = await _bookCatalogService.GetById(bookid);
+
+                    await _bookLoanRepository.AddBookToLoan(userId, newBook);
+                }
+
+                return;
+            }
 
             var user = await _userService.GetUserById(userId);
 
-            var book = await _bookCatalogService.GetById(model.BookId);
+            var bookList = new List<Book>();
 
-            var bookList = new List<Book>(){ book };
+            foreach (var bookid in model.BookIds) 
+            {
+                var book = await _bookCatalogService.GetById(bookid);
+
+                bookList.Add(book);
+            }
 
             var bookLoan = new BookLoan(bookList, user);
 
-            if (result is null) 
-            {
-                await _bookLoanRepository.AddBookLoan(bookLoan);
-            }
-            else 
-            {
-                await _bookLoanRepository.UpdateBookLoan(bookLoan);
-            }            
+            await _bookLoanRepository.AddBookLoan(bookLoan);
+        }
+
+        private async Task<bool> VerifyUserAlreadyHasLoan(Guid userId) 
+        {   
+            var result = await _bookLoanRepository.GetByUserIdAsync(userId);
+
+            return result is not null;
+        }
+
+        private async Task<bool> VerifyBookExistsInUserLoan(Guid userId, Guid bookId) 
+        {
+            return await _bookLoanRepository.GetLoanByBookAndUserId(userId, bookId);
         }
     }
 }

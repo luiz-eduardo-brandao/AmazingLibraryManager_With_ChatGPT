@@ -44,6 +44,14 @@ namespace AmazingLibraryManager.LoanService.API.Infrastructure.Persistence
             return Task.FromResult(result);
         }
 
+        public Task<bool> GetLoanByBookAndUserId(Guid userId, Guid bookId) 
+        {
+            var result = _loans.SingleOrDefault(l => l.User.Id == userId)
+                .Books.Any(b => b.Id == bookId);
+
+            return Task.FromResult(result);
+        }
+
         public Task AddBookLoan(BookLoan bookLoan) 
         {
             _loans.Add(bookLoan);
@@ -56,6 +64,13 @@ namespace AmazingLibraryManager.LoanService.API.Infrastructure.Persistence
             var result = await GetByUserIdAsync(bookLoan.User.Id);
 
             result.AddBooks(bookLoan.Books);
+        }
+
+        public async Task AddBookToLoan(Guid userId, Book book) 
+        {
+            var result = await GetByUserIdAsync(userId);
+
+            result.AddBook(book);
         }
     }
 }

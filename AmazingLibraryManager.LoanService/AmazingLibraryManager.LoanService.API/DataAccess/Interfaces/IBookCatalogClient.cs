@@ -9,6 +9,6 @@ namespace AmazingLibraryManager.LoanService.API.DataAccess.Interfaces
         Task<IEnumerable<Book>> GetAvailibleBooks();      
 
         [Get("/book/{id}")]
-        Task<Book> GetById(Guid id);         
+        Task<ApiResponse<Book>> GetById(Guid id);         
     }
 }

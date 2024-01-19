@@ -37,11 +37,13 @@ namespace AmazingLibraryManager.LoanService.API.Services
         {
             try 
             {
-                var result = await _client.GetById(id);
+                var response = await _client.GetById(id);
 
-                if (result is null) throw new NullReferenceException("There Book doesn't exist.");
+                if (response is null) throw new NullReferenceException("There Book doesn't exist.");
 
-                return result;
+                if (!response.IsSuccessStatusCode) throw new InvalidOperationException(response.Error.Content);
+
+                return response.Content;
             }
             catch (ApiException ex) 
             {
