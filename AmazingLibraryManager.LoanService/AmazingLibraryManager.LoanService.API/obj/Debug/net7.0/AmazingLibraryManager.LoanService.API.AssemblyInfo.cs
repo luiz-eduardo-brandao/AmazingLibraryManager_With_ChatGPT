@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AmazingLibraryManager.LoanService.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb4c0690f6c67ce9084a072d2270948b88873b57")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+93aa4e0a5a86901cffdb507f5ef7a3570660a6d1")]
 [assembly: System.Reflection.AssemblyProductAttribute("AmazingLibraryManager.LoanService.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AmazingLibraryManager.LoanService.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

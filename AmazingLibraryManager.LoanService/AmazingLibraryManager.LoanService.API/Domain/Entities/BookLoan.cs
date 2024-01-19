@@ -25,6 +25,11 @@ namespace AmazingLibraryManager.LoanService.API.Domain.Entities
             }
         }
 
+        public void RemoveBook(Guid bookId) 
+        {
+            Books.RemoveAll(b => b.Id == bookId);
+        }
+
         public Guid Id { get; private set; }
         public List<Book> Books { get; private set; }
         public User User { get; private set; }

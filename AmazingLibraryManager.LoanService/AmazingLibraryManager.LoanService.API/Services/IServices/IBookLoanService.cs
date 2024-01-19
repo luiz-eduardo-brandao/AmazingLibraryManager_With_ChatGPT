@@ -7,6 +7,7 @@ namespace AmazingLibraryManager.LoanService.API.Services.IServices
     {
         Task<List<BookLoan>> GetAll();
         Task<BookLoan> GetByUserId(Guid id);
-        Task AddBookLoan(Guid userId, BookLoanInputModel model) ;
+        Task AddBookLoan(Guid userId, BookLoanInputModel model);
+        Task ReturnBookFromLoan(Guid userId, BookLoanInputModel model);
     }
 }

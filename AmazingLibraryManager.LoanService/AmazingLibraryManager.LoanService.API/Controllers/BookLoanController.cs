@@ -55,5 +55,20 @@ namespace AmazingLibraryManager.LoanService.API.Controllers
                 return BadRequest(ex.Message);
             }
         }
+
+        [HttpDelete("{userId}")]
+        public async Task<IActionResult> Delete(Guid userId, [FromBody] BookLoanInputModel model) 
+        {
+            try
+            {
+                await _bookLoanService.ReturnBookFromLoan(userId, model);
+
+                return Ok("Book have been removed with success.");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
     }
 }

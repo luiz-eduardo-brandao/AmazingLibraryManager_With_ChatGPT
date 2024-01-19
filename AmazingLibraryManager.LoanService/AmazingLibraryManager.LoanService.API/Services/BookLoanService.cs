@@ -68,6 +68,20 @@ namespace AmazingLibraryManager.LoanService.API.Services
             await _bookLoanRepository.AddBookLoan(bookLoan);
         }
 
+        public async Task ReturnBookFromLoan(Guid userId, BookLoanInputModel model) 
+        {
+            if (!await VerifyUserAlreadyHasLoan(userId)) 
+                throw new InvalidOperationException("This User doesn't exist.");
+
+            foreach (var bookid in model.BookIds) 
+            {
+                if (await VerifyBookExistsInUserLoan(userId, bookid)) 
+                {
+                    await _bookLoanRepository.ReturnBookFromLoan(userId, bookid);
+                }
+            }
+        }
+
         private async Task<bool> VerifyUserAlreadyHasLoan(Guid userId) 
         {   
             var result = await _bookLoanRepository.GetByUserIdAsync(userId);
