@@ -1,5 +1,6 @@
 ﻿using AmazingLibraryManager.BooksCatalog.Application.InputModels;
 using AmazingLibraryManager.BooksCatalog.Core.Entities;
+using AmazingLibraryManager.BooksCatalog.Core.ValueObjects;
 
 namespace AmazingLibraryManager.BooksCatalog.Application.Interfaces
 {
@@ -11,5 +12,7 @@ namespace AmazingLibraryManager.BooksCatalog.Application.Interfaces
         Task<List<Book>> GetAvailibleBooks();
         Task<List<Book>> GetAllBooks();
         Task<Book?> GetById(Guid bookId);
+        Task<List<BookReview>> GetBookReviews(Guid bookId);
+        Task AddBookReview(Guid bookId, AddBookReviewInputModel model);
     }
 }

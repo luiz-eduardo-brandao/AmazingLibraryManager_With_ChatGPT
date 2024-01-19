@@ -2,6 +2,7 @@
 using AmazingLibraryManager.BooksCatalog.Application.Interfaces;
 using AmazingLibraryManager.BooksCatalog.Core.Entities;
 using AmazingLibraryManager.BooksCatalog.Core.Repositories;
+using AmazingLibraryManager.BooksCatalog.Core.ValueObjects;
 
 namespace AmazingLibraryManager.BooksCatalog.Application.Services
 {
@@ -26,7 +27,11 @@ namespace AmazingLibraryManager.BooksCatalog.Application.Services
 
         public async Task<Book?> GetById(Guid bookId)
         {
-            return await _bookRepository.GetBookByIdAsync(bookId);
+            var result = await _bookRepository.GetBookByIdAsync(bookId);
+
+            if (result is null) throw new NullReferenceException("There's no Book with this Id.");
+
+            return result;
         }
 
         public async Task<Book> AddBook(InsertBookInputModel model)
@@ -51,11 +56,45 @@ namespace AmazingLibraryManager.BooksCatalog.Application.Services
         {
             var result = await GetById(id);
 
-            if (result is null) throw new NullReferenceException("There's no Book with this Id.");
-
             if (result.IsDeleted) throw new InvalidOperationException("Book has already deleted.");
 
             await _bookRepository.DeleteBookAsync(id);
+        }
+
+        public async Task<List<BookReview>> GetBookReviews(Guid bookId) 
+        {
+            var _ = await GetById(bookId);
+
+            var reviews = await _bookRepository.GetBookReviews(bookId);
+
+            if (reviews is null) throw new NullReferenceException("There are not reviews for this book.");
+
+            return reviews;
+        }
+
+        public async Task AddBookReview(Guid bookId, AddBookReviewInputModel model) 
+        {
+            var _ = await GetById(bookId);
+
+            var rating = VerifyBookRating(model.Rating);
+
+            var bookReview = new BookReview(model.UserId, rating, model.Review);
+
+            await _bookRepository.AddBookReview(bookId, bookReview);
+        }
+
+        private BookRating VerifyBookRating(int userRating) 
+        {
+            BookRating bookRating = userRating switch
+            {
+                1 => BookRating.Bad,
+                2 => BookRating.Unliked,
+                3 => BookRating.Medium,
+                4 => BookRating.Good,
+                5 => BookRating.Amazing
+            };
+
+            return bookRating;
         }
     }
 }

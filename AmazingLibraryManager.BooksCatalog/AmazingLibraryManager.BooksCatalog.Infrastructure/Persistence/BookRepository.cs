@@ -1,5 +1,6 @@
 ﻿using AmazingLibraryManager.BooksCatalog.Core.Entities;
 using AmazingLibraryManager.BooksCatalog.Core.Repositories;
+using AmazingLibraryManager.BooksCatalog.Core.ValueObjects;
 using System.Net;
 
 namespace AmazingLibraryManager.BooksCatalog.Infrastructure.Persistence
@@ -10,9 +11,11 @@ namespace AmazingLibraryManager.BooksCatalog.Infrastructure.Persistence
 
         public BookRepository()
         {
+            var reviews = new List<BookReview>();
+
             _books = new List<Book> 
             {
-                new Book(Guid.NewGuid(), "Harry Potter", "E a Pedra Filosofal", "J.K Rolling", DateTime.Today.AddYears(-20)),
+                new Book(Guid.NewGuid(), "Harry Potter", "E a Pedra Filosofal", "J.K Rolling", DateTime.Today.AddYears(-20), reviews),
                 new Book(Guid.NewGuid(), "Harry Potter", "E a Câmara Secreta", "J.K Rolling", DateTime.Today.AddYears(-19)),
                 new Book(Guid.NewGuid(), "Harry Potter", "E o Prisioneiro de Askaban", "J.K Rolling", DateTime.Today.AddYears(-18)),
                 new Book(Guid.NewGuid(), "Harry Potter", "E o Cálice de Fogo", "J.K Rolling", DateTime.Today.AddYears(-17)),
@@ -74,6 +77,20 @@ namespace AmazingLibraryManager.BooksCatalog.Infrastructure.Persistence
             result.Delete();
 
             return Task.CompletedTask;
+        }
+
+        public async Task<List<BookReview>> GetBookReviews(Guid bookId) 
+        {
+            var result = _books.SingleOrDefault(b => b.Id == bookId)?.Reviews;
+
+            return result;
+        }
+
+        public async Task AddBookReview(Guid bookId, BookReview review)
+        {
+            var result = await GetBookByIdAsync(bookId);
+
+            result.AddReview(review);
         }
     }
 }

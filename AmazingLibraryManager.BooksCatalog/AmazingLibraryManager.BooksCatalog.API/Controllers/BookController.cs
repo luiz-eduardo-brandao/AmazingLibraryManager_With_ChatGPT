@@ -111,6 +111,34 @@ namespace AmazingLibraryManager.BooksCatalog.API.Controllers
             }
         }
 
+        [HttpGet("review/{bookId}")]
+        public async Task<IActionResult> GetReviews(Guid bookId) 
+        {
+            try 
+            {
+                return Ok(await _bookService.GetBookReviews(bookId));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpPost("review/{bookId}")]
+        public async Task<IActionResult> PostReview(Guid bookId, [FromBody] AddBookReviewInputModel model) 
+        {
+            try 
+            {
+                await _bookService.AddBookReview(bookId, model);
+
+                return Ok("Book Review added with success.");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(Guid id) 
         {

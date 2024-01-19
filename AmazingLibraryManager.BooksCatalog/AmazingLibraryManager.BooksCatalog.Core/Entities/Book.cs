@@ -1,15 +1,30 @@
-﻿namespace AmazingLibraryManager.BooksCatalog.Core.Entities
+﻿using AmazingLibraryManager.BooksCatalog.Core.ValueObjects;
+
+namespace AmazingLibraryManager.BooksCatalog.Core.Entities
 {
     public class Book : BaseEntity
     {
         public Book(Book book) : base()
         {
             Validate(book.Title, book.SubTitle, book.Author, book.PublishDate);
+
+            Reviews = new List<BookReview>();
         }
 
         public Book(string title, string subTitle, string author, DateTime publishDate) : base()
         {
             Validate(title, subTitle, author, publishDate);
+
+            Reviews = new List<BookReview>();
+        }
+
+        public Book(Guid id, string title, string subTitle, string author, DateTime publishDate, List<BookReview> reviews)
+        {
+            Validate(title, subTitle, author, publishDate);
+
+            Reviews = reviews;
+
+            Id = id;
         }
 
         public Book(Guid id, string title, string subTitle, string author, DateTime publishDate)
@@ -26,6 +41,11 @@
             SubTitle = book.SubTitle;
             Author = book.Author;
             PublishDate = book.PublishDate;
+        }
+
+        public void AddReview(BookReview review) 
+        {
+            Reviews.Add(review);
         }
 
         public void Validate(string title, string subTitle, string author, DateTime publishDate) 
@@ -52,5 +72,6 @@
         public string SubTitle { get; private set; }
         public string Author { get; private set; }
         public DateTime PublishDate { get; private set; }
+        public List<BookReview> Reviews { get; set; }
     }
 }

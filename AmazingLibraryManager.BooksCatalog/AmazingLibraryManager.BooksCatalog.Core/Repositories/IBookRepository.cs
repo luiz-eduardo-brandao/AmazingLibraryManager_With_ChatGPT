@@ -1,4 +1,5 @@
 ﻿using AmazingLibraryManager.BooksCatalog.Core.Entities;
+using AmazingLibraryManager.BooksCatalog.Core.ValueObjects;
 
 namespace AmazingLibraryManager.BooksCatalog.Core.Repositories
 {
@@ -12,5 +13,7 @@ namespace AmazingLibraryManager.BooksCatalog.Core.Repositories
         Task<List<Book>> GetAvailibleBooks();
         Task<IEnumerable<Book>> GetllLoanedBooks();
         Task<IEnumerable<Book>> GetLoanedBooksByUserId(int userId);
+        Task<List<BookReview>> GetBookReviews(Guid bookId);
+        Task AddBookReview(Guid bookId, BookReview review);
     }
 }
