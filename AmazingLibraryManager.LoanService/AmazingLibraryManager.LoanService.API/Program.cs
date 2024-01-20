@@ -1,5 +1,6 @@
 using AmazingLibraryManager.LoanService.API.DataAccess.RefitConfiguration;
 using AmazingLibraryManager.LoanService.API.Domain.Repositories;
+using AmazingLibraryManager.LoanService.API.Infrastructure.EventBus;
 using AmazingLibraryManager.LoanService.API.Infrastructure.Persistence;
 using AmazingLibraryManager.LoanService.API.Services;
 using AmazingLibraryManager.LoanService.API.Services.IServices;
@@ -8,6 +9,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddExternalApiClients(builder.Configuration);
+
+builder.Services.AddScoped<IEventBus, RabbitMqService>();
 
 builder.Services.AddSingleton<IBookLoanRepository, BookLoanRepository>();
 builder.Services.AddScoped<IBookLoanService, BookLoanService>();

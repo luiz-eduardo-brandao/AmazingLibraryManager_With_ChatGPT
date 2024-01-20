@@ -1,5 +1,7 @@
 using AmazingLibraryManager.LoanService.API.Domain.Entities;
+using AmazingLibraryManager.LoanService.API.Domain.Events;
 using AmazingLibraryManager.LoanService.API.Domain.Repositories;
+using AmazingLibraryManager.LoanService.API.Infrastructure.EventBus;
 using AmazingLibraryManager.LoanService.API.Models.InputModels;
 using AmazingLibraryManager.LoanService.API.Services.IServices;
 
@@ -7,15 +9,18 @@ namespace AmazingLibraryManager.LoanService.API.Services
 {
     public class BookLoanService : IBookLoanService
     {
+        private readonly IEventBus _bus;
         private readonly IUserService _userService;
         private readonly IBookCatalogService _bookCatalogService;
         private readonly IBookLoanRepository _bookLoanRepository;
 
-        public BookLoanService(IBookLoanRepository bookLoanRepository, IUserService userService, IBookCatalogService bookCatalogService)
+        public BookLoanService(IBookLoanRepository bookLoanRepository, IUserService userService, IBookCatalogService bookCatalogService,
+            IEventBus bus)
         {
             _bookLoanRepository = bookLoanRepository;
             _userService = userService;
             _bookCatalogService = bookCatalogService;
+            _bus = bus;
         }
 
         public async Task<List<BookLoan>> GetAll() 
@@ -49,6 +54,14 @@ namespace AmazingLibraryManager.LoanService.API.Services
                     await _bookLoanRepository.AddBookToLoan(userId, newBook);
                 }
 
+                _bus.Publish(new BookLoaned() 
+                { 
+                    UserId = userId,
+                    BookIds = model.BookIds,
+                    LoanDate = DateTime.Now,
+                    ReturnDate = DateTime.Now.AddDays(7)
+                });
+
                 return;
             }
 
@@ -66,6 +79,14 @@ namespace AmazingLibraryManager.LoanService.API.Services
             var bookLoan = new BookLoan(bookList, user);
 
             await _bookLoanRepository.AddBookLoan(bookLoan);
+
+            _bus.Publish(new BookLoaned() 
+            { 
+                UserId = bookLoan.User.Id,
+                BookIds = bookLoan.Books.Select(b => b.Id).ToList(),
+                LoanDate = DateTime.Now,
+                ReturnDate = DateTime.Now.AddDays(7)
+            });
         }
 
         public async Task ReturnBookFromLoan(Guid userId, BookLoanInputModel model) 

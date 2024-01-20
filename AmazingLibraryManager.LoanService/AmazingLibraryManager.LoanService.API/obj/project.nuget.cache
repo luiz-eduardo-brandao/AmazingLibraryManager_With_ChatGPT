@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "qBfr4tisz+R430yd3Uzul/kxn/KrVZ0OskQ1xMQUkxZbQz1AQbguqP1QFcNPFa0+wdeuTr0lcbFdqJWbq2tU/Q==",
+  "dgSpecHash": "tcDO4w8a9hTLAGbhEQmRuc9xXQ5NF4QqC8+ObGKTYeSzV4tH8OZ4fTgVfslK25GolJ3qQKs2lquz1EHkvnsO2A==",
   "success": true,
   "projectFilePath": "C:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.LoanService\\AmazingLibraryManager.LoanService.API\\AmazingLibraryManager.LoanService.API.csproj",
   "expectedPackageFiles": [
@@ -15,15 +15,19 @@
     "C:\\Users\\Luiz Brandão\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
     "C:\\Users\\Luiz Brandão\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "C:\\Users\\Luiz Brandão\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\Luiz Brandão\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
+    "C:\\Users\\Luiz Brandão\\.nuget\\packages\\rabbitmq.client\\6.4.0\\rabbitmq.client.6.4.0.nupkg.sha512",
     "C:\\Users\\Luiz Brandão\\.nuget\\packages\\refit\\7.0.0\\refit.7.0.0.nupkg.sha512",
     "C:\\Users\\Luiz Brandão\\.nuget\\packages\\refit.httpclientfactory\\7.0.0\\refit.httpclientfactory.7.0.0.nupkg.sha512",
     "C:\\Users\\Luiz Brandão\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "C:\\Users\\Luiz Brandão\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "C:\\Users\\Luiz Brandão\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
     "C:\\Users\\Luiz Brandão\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
+    "C:\\Users\\Luiz Brandão\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\Luiz Brandão\\.nuget\\packages\\system.net.http.json\\7.0.1\\system.net.http.json.7.0.1.nupkg.sha512",
     "C:\\Users\\Luiz Brandão\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
-    "C:\\Users\\Luiz Brandão\\.nuget\\packages\\system.text.json\\7.0.3\\system.text.json.7.0.3.nupkg.sha512"
+    "C:\\Users\\Luiz Brandão\\.nuget\\packages\\system.text.json\\7.0.3\\system.text.json.7.0.3.nupkg.sha512",
+    "C:\\Users\\Luiz Brandão\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"
   ],
   "logs": [
     {

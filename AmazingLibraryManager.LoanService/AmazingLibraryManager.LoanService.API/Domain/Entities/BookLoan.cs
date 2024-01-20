@@ -1,6 +1,6 @@
 namespace AmazingLibraryManager.LoanService.API.Domain.Entities
 {
-    public class BookLoan
+    public class BookLoan : AggregateRoot
     {
         public BookLoan(List<Book> books, User user)
         {

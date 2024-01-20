@@ -34,3 +34,5 @@ C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.LoanService\
 C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.LoanService\AmazingLibraryManager.LoanService.API\obj\Debug\net7.0\ref\AmazingLibraryManager.LoanService.API.dll
 C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.LoanService\AmazingLibraryManager.LoanService.API\bin\Debug\net7.0\Refit.dll
 C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.LoanService\AmazingLibraryManager.LoanService.API\bin\Debug\net7.0\Refit.HttpClientFactory.dll
+C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.LoanService\AmazingLibraryManager.LoanService.API\bin\Debug\net7.0\RabbitMQ.Client.dll
+C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.LoanService\AmazingLibraryManager.LoanService.API\bin\Debug\net7.0\Newtonsoft.Json.dll
