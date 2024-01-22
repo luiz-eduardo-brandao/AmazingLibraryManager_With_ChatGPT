@@ -14,5 +14,7 @@ namespace AmazingLibraryManager.BooksCatalog.Application.Interfaces
         Task<Book?> GetById(Guid bookId);
         Task<List<BookReview>> GetBookReviews(Guid bookId);
         Task AddBookReview(Guid bookId, AddBookReviewInputModel model);
+        Task RegisterBookLoan(Guid id);
+        Task RegisterBookReturn(Guid id);
     }
 }

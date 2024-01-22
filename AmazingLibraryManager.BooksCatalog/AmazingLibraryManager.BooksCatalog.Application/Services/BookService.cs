@@ -27,11 +27,11 @@ namespace AmazingLibraryManager.BooksCatalog.Application.Services
 
         public async Task<Book?> GetById(Guid bookId)
         {
-            var result = await _bookRepository.GetBookByIdAsync(bookId);
+            var book = await _bookRepository.GetBookByIdAsync(bookId);
 
-            if (result is null) throw new NullReferenceException("There's no Book with this Id.");
+            VerifyBookExists(book);
 
-            return result;
+            return book;
         }
 
         public async Task<Book> AddBook(InsertBookInputModel model)
@@ -54,16 +54,19 @@ namespace AmazingLibraryManager.BooksCatalog.Application.Services
 
         public async Task DeleteBook(Guid id) 
         {
-            var result = await GetById(id);
+            var book = await _bookRepository.GetBookByIdAsync(id);
 
-            if (result.IsDeleted) throw new InvalidOperationException("Book has already deleted.");
+            VerifyBookExists(book);
+            VerifyBookIsLoaned(book);
+
+            if (book.IsDeleted) throw new InvalidOperationException("Book has already deleted.");
 
             await _bookRepository.DeleteBookAsync(id);
         }
 
         public async Task<List<BookReview>> GetBookReviews(Guid bookId) 
         {
-            var _ = await GetById(bookId);
+            VerifyBookExists(await _bookRepository.GetBookByIdAsync(bookId));
 
             var reviews = await _bookRepository.GetBookReviews(bookId);
 
@@ -74,7 +77,9 @@ namespace AmazingLibraryManager.BooksCatalog.Application.Services
 
         public async Task AddBookReview(Guid bookId, AddBookReviewInputModel model) 
         {
-            var _ = await GetById(bookId);
+            var book = await _bookRepository.GetBookByIdAsync(bookId);
+
+            VerifyBookExists(book);
 
             var rating = VerifyBookRating(model.Rating);
 
@@ -95,6 +100,33 @@ namespace AmazingLibraryManager.BooksCatalog.Application.Services
             };
 
             return bookRating;
+        }
+
+        public async Task RegisterBookLoan(Guid id) 
+        {
+            var book = await _bookRepository.GetBookByIdAsync(id);
+
+            VerifyBookExists(book);
+            VerifyBookIsLoaned(book);
+
+            await _bookRepository.RegisterBookLoan(id);
+        }
+
+        public async Task RegisterBookReturn(Guid id) 
+        {
+            VerifyBookExists(await _bookRepository.GetBookByIdAsync(id));
+
+            await _bookRepository.RegisterBookReturn(id);
+        }
+
+        private void VerifyBookExists(Book book) 
+        {
+            if (book is null) throw new NullReferenceException("There's no Book with this Id.");
+        }
+
+        private void VerifyBookIsLoaned(Book book) 
+        {
+            if (book.IsLoaned) throw new InvalidOperationException("This Book has already Loaned by other user :( . Please, try another book.");
         }
     }
 }

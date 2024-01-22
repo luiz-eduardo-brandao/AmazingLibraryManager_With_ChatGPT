@@ -202,7 +202,6 @@ c:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog
 c:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.UnitTests\obj\Debug\net8.0\AmazingLibraryManager.BooksCatalog.UnitTests.genruntimeconfig.cache
 c:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.UnitTests\obj\Debug\net8.0\ref\AmazingLibraryManager.BooksCatalog.UnitTests.dll
 C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.UnitTests\bin\Debug\net8.0\Castle.Core.dll
-C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.UnitTests\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.UnitTests\bin\Debug\net8.0\Moq.dll
 C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.UnitTests\bin\Debug\net8.0\AmazingLibraryManager.BooksCatalog.Application.dll
 C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.UnitTests\bin\Debug\net8.0\AmazingLibraryManager.BooksCatalog.Application.pdb
@@ -263,7 +262,6 @@ C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog
 C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.UnitTests\bin\Debug\net8.0\System.Data.Odbc.dll
 C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.UnitTests\bin\Debug\net8.0\System.Data.OleDb.dll
 C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.UnitTests\bin\Debug\net8.0\System.Data.SqlClient.dll
-C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.UnitTests\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
 C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.UnitTests\bin\Debug\net8.0\System.Diagnostics.PerformanceCounter.dll
 C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.UnitTests\bin\Debug\net8.0\System.DirectoryServices.dll
 C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.UnitTests\bin\Debug\net8.0\System.DirectoryServices.AccountManagement.dll
@@ -275,9 +273,7 @@ C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog
 C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.UnitTests\bin\Debug\net8.0\System.Private.ServiceModel.dll
 C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.UnitTests\bin\Debug\net8.0\System.Reflection.Context.dll
 C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.UnitTests\bin\Debug\net8.0\System.Runtime.Caching.dll
-C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.UnitTests\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
 C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.UnitTests\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
-C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.UnitTests\bin\Debug\net8.0\System.Security.Cryptography.Xml.dll
 C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.UnitTests\bin\Debug\net8.0\System.Security.Permissions.dll
 C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.UnitTests\bin\Debug\net8.0\System.ServiceModel.Duplex.dll
 C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.UnitTests\bin\Debug\net8.0\System.ServiceModel.Http.dll
@@ -305,7 +301,6 @@ C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog
 C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.UnitTests\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Data.OleDb.dll
 C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.UnitTests\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.UnitTests\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.UnitTests\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.EventLog.dll
 C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.UnitTests\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
 C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.UnitTests\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.dll
 C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.UnitTests\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.0\System.DirectoryServices.AccountManagement.dll
@@ -319,8 +314,12 @@ C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog
 C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.UnitTests\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.IO.Ports.dll
 C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.UnitTests\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.0\System.Management.dll
 C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.UnitTests\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
-C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.UnitTests\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Security.Cryptography.Pkcs.dll
 C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.UnitTests\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.UnitTests\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.ServiceProcess.ServiceController.dll
 C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.UnitTests\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Threading.AccessControl.dll
 C:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.UnitTests\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+c:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.UnitTests\bin\Debug\net8.0\Microsoft.OpenApi.dll
+c:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.UnitTests\bin\Debug\net8.0\RabbitMQ.Client.dll
+c:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.UnitTests\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+c:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.UnitTests\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+c:\edu\GIT\AmazingLibraryManager_With_ChatGPT\AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.UnitTests\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll

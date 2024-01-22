@@ -48,15 +48,22 @@ namespace AmazingLibraryManager.BooksCatalog.API.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(Guid id)
         {
-            var book = await _bookService.GetById(id);
+            try
+            {
+                var book = await _bookService.GetById(id);
 
-            if (book != null)
-            {
-                return Ok(book);
+                if (book != null)
+                {
+                    return Ok(book);
+                }
+                else
+                {
+                    return NotFound("This Book doesn't exist.");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                return NotFound("This Book doesn't exist.");
+                return BadRequest(ex.Message);
             }
         }
 
@@ -132,6 +139,36 @@ namespace AmazingLibraryManager.BooksCatalog.API.Controllers
                 await _bookService.AddBookReview(bookId, model);
 
                 return Ok("Book Review added with success.");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpPut("loan-book/{bookId}")]
+        public async Task<IActionResult> RegisterBookLoan(Guid bookId) 
+        {
+            try
+            {
+                await _bookService.RegisterBookLoan(bookId);
+
+                return Ok("Book Loan registered with success.");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpPut("return-book/{bookId}")]
+        public async Task<IActionResult> RegisterBookReturn(Guid bookId) 
+        {
+            try
+            {
+                await _bookService.RegisterBookReturn(bookId);
+
+                return Ok("Book Return registered with success.");
             }
             catch (Exception ex)
             {

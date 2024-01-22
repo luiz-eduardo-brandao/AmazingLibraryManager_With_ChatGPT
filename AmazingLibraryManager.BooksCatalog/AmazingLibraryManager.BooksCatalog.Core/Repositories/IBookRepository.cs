@@ -15,5 +15,7 @@ namespace AmazingLibraryManager.BooksCatalog.Core.Repositories
         Task<IEnumerable<Book>> GetLoanedBooksByUserId(int userId);
         Task<List<BookReview>> GetBookReviews(Guid bookId);
         Task AddBookReview(Guid bookId, BookReview review);
+        Task RegisterBookLoan(Guid bookId);
+        Task RegisterBookReturn(Guid bookId);
     }
 }

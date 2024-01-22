@@ -32,14 +32,15 @@ namespace AmazingLibraryManager.BooksCatalog.Infrastructure.Persistence
 
         public Task<List<Book>> GetAvailibleBooks()
         {
-            var books = _books.Where(b => !b.IsDeleted).ToList();
+            var books = _books.Where(b => !b.IsDeleted && !b.IsLoaned).ToList();
 
             return Task.FromResult(books);
         }
 
         public Task<Book?> GetBookByIdAsync(Guid id)
         {
-            var result = _books.SingleOrDefault(b => b.Id == id);
+            var result = _books.SingleOrDefault(b => b.Id == id 
+                && !b.IsDeleted );
 
             return Task.FromResult(result);
         }
@@ -91,6 +92,20 @@ namespace AmazingLibraryManager.BooksCatalog.Infrastructure.Persistence
             var result = await GetBookByIdAsync(bookId);
 
             result.AddReview(review);
+        }
+
+        public async Task RegisterBookLoan(Guid bookId) 
+        {
+            var result = _books.SingleOrDefault(b => b.Id == bookId);
+
+            result.LoanBook();
+        }
+
+        public async Task RegisterBookReturn(Guid bookId) 
+        {
+            var result = _books.SingleOrDefault(b => b.Id == bookId);
+
+            result.ReturnBook();
         }
     }
 }
