@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "HWQvIYu/ehq03+9FDbiY+RnFrn8dCmVTbyWBq7iCkks=",
+  "Source": "AmazingLibraryManager.APIGateway",
+  "BasePath": "_content/AmazingLibraryManager.APIGateway",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
