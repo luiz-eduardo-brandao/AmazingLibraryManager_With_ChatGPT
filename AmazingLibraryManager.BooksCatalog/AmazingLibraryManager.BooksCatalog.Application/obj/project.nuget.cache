@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "k4c65+OF1p/83u2tsWGhmV73+DC59iD6bETLWWPcONo+WQgvIhUYRlAIfns48o7QZ41LRm0bq/vd0lXiNxSXZA==",
+  "dgSpecHash": "IIIXKZrpGntSrC84szcVc4K8hFAWUh3IZKkq6jBvh5ziux8gZXWQqHbqDOaP3Xat4/RNESSeVxpEmZ9sm/b2uA==",
   "success": true,
-  "projectFilePath": "c:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Application\\AmazingLibraryManager.BooksCatalog.Application.csproj",
+  "projectFilePath": "C:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Application\\AmazingLibraryManager.BooksCatalog.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Luiz Brandão\\.nuget\\packages\\microsoft.aspnetcore.hosting.server.abstractions\\2.2.0\\microsoft.aspnetcore.hosting.server.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Luiz Brandão\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
