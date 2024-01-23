@@ -5,29 +5,33 @@ VisualStudioVersion = 17.8.34322.80
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AmazingLibraryManager.BooksCatalog", "AmazingLibraryManager.BooksCatalog", "{B98AEA45-853D-4B79-828F-936A7057A2C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazingLibraryManager.BooksCatalog.Core", "AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.Core\AmazingLibraryManager.BooksCatalog.Core.csproj", "{9BCB89FD-DCD8-4376-934D-76B9928AFA07}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmazingLibraryManager.BooksCatalog.Core", "AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.Core\AmazingLibraryManager.BooksCatalog.Core.csproj", "{9BCB89FD-DCD8-4376-934D-76B9928AFA07}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazingLibraryManager.BooksCatalog.Application", "AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.Application\AmazingLibraryManager.BooksCatalog.Application.csproj", "{4BABEF3E-7753-4E89-B56F-A4396100D8BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmazingLibraryManager.BooksCatalog.Application", "AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.Application\AmazingLibraryManager.BooksCatalog.Application.csproj", "{4BABEF3E-7753-4E89-B56F-A4396100D8BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazingLibraryManager.BooksCatalog.Infrastructure", "AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.Infrastructure\AmazingLibraryManager.BooksCatalog.Infrastructure.csproj", "{ED8103B1-DD85-4A05-B968-E9E9E2CF08F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmazingLibraryManager.BooksCatalog.Infrastructure", "AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.Infrastructure\AmazingLibraryManager.BooksCatalog.Infrastructure.csproj", "{ED8103B1-DD85-4A05-B968-E9E9E2CF08F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazingLibraryManager.BooksCatalog.API", "AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.API\AmazingLibraryManager.BooksCatalog.API.csproj", "{8539D046-139E-43DC-849A-F027A6860E88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmazingLibraryManager.BooksCatalog.API", "AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.API\AmazingLibraryManager.BooksCatalog.API.csproj", "{8539D046-139E-43DC-849A-F027A6860E88}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AmazingLibraryManager.Users", "AmazingLibraryManager.Users", "{1EDC7E81-AB55-4B7D-AF06-8499CC693A00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazingLibraryManager.Users.API", "AmazingLibraryManager.Users\AmazingLibraryManager.Users.API\AmazingLibraryManager.Users.API.csproj", "{9B8E0F6A-04C5-4CDE-A75C-505D0A90201B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmazingLibraryManager.Users.API", "AmazingLibraryManager.Users\AmazingLibraryManager.Users.API\AmazingLibraryManager.Users.API.csproj", "{9B8E0F6A-04C5-4CDE-A75C-505D0A90201B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazingLibraryManager.Users.Application", "AmazingLibraryManager.Users\AmazingLibraryManager.Users.Application\AmazingLibraryManager.Users.Application.csproj", "{FBA956FE-36B8-4295-A9C6-BF39B5C9179F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmazingLibraryManager.Users.Application", "AmazingLibraryManager.Users\AmazingLibraryManager.Users.Application\AmazingLibraryManager.Users.Application.csproj", "{FBA956FE-36B8-4295-A9C6-BF39B5C9179F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazingLibraryManager.Users.Core", "AmazingLibraryManager.Users\AmazingLibraryManager.Users.Core\AmazingLibraryManager.Users.Core.csproj", "{31D29633-7587-4CF6-ABFA-D5257A81178C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmazingLibraryManager.Users.Core", "AmazingLibraryManager.Users\AmazingLibraryManager.Users.Core\AmazingLibraryManager.Users.Core.csproj", "{31D29633-7587-4CF6-ABFA-D5257A81178C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazingLibraryManager.Users.Infrastructure", "AmazingLibraryManager.Users\AmazingLibraryManager.Users.Infrastructure\AmazingLibraryManager.Users.Infrastructure.csproj", "{984423A2-12CE-432C-84C1-247E73821213}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmazingLibraryManager.Users.Infrastructure", "AmazingLibraryManager.Users\AmazingLibraryManager.Users.Infrastructure\AmazingLibraryManager.Users.Infrastructure.csproj", "{984423A2-12CE-432C-84C1-247E73821213}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AmazingLibraryManager.LoanService", "AmazingLibraryManager.LoanService", "{72DE1196-8A2D-4A60-A71A-FF10D9191A4C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazingLibraryManager.LoanService.API", "AmazingLibraryManager.LoanService\AmazingLibraryManager.LoanService.API\AmazingLibraryManager.LoanService.API.csproj", "{C6AF4740-ABD7-4C67-A5D0-D64F0F35CD43}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmazingLibraryManager.LoanService.API", "AmazingLibraryManager.LoanService\AmazingLibraryManager.LoanService.API\AmazingLibraryManager.LoanService.API.csproj", "{C6AF4740-ABD7-4C67-A5D0-D64F0F35CD43}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazingLibraryManager.BooksCatalog.UnitTests", "AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.UnitTests\AmazingLibraryManager.BooksCatalog.UnitTests.csproj", "{09F50C02-CC19-433E-A7A7-29EF0AF1D57B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmazingLibraryManager.BooksCatalog.UnitTests", "AmazingLibraryManager.BooksCatalog\AmazingLibraryManager.BooksCatalog.UnitTests\AmazingLibraryManager.BooksCatalog.UnitTests.csproj", "{09F50C02-CC19-433E-A7A7-29EF0AF1D57B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AmazingLibraryManager.APIGateway", "AmazingLibraryManager.APIGateway", "{DA3C6944-1847-40DA-8C42-9DDC355B6329}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazingLibraryManager.APIGateway", "AmazingLibraryManager.APIGateway\AmazingLibraryManager.APIGateway.csproj", "{9FCD0DD9-9EE6-477B-9BFB-6D3017CBC986}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,14 +75,14 @@ Global
 		{C6AF4740-ABD7-4C67-A5D0-D64F0F35CD43}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6AF4740-ABD7-4C67-A5D0-D64F0F35CD43}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6AF4740-ABD7-4C67-A5D0-D64F0F35CD43}.Release|Any CPU.Build.0 = Release|Any CPU
-		{660E0F20-BA13-4AA3-886F-18BA63BB8423}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{660E0F20-BA13-4AA3-886F-18BA63BB8423}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{660E0F20-BA13-4AA3-886F-18BA63BB8423}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{660E0F20-BA13-4AA3-886F-18BA63BB8423}.Release|Any CPU.Build.0 = Release|Any CPU
 		{09F50C02-CC19-433E-A7A7-29EF0AF1D57B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{09F50C02-CC19-433E-A7A7-29EF0AF1D57B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09F50C02-CC19-433E-A7A7-29EF0AF1D57B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09F50C02-CC19-433E-A7A7-29EF0AF1D57B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FCD0DD9-9EE6-477B-9BFB-6D3017CBC986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FCD0DD9-9EE6-477B-9BFB-6D3017CBC986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FCD0DD9-9EE6-477B-9BFB-6D3017CBC986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FCD0DD9-9EE6-477B-9BFB-6D3017CBC986}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -94,6 +98,7 @@ Global
 		{984423A2-12CE-432C-84C1-247E73821213} = {1EDC7E81-AB55-4B7D-AF06-8499CC693A00}
 		{C6AF4740-ABD7-4C67-A5D0-D64F0F35CD43} = {72DE1196-8A2D-4A60-A71A-FF10D9191A4C}
 		{09F50C02-CC19-433E-A7A7-29EF0AF1D57B} = {B98AEA45-853D-4B79-828F-936A7057A2C3}
+		{9FCD0DD9-9EE6-477B-9BFB-6D3017CBC986} = {DA3C6944-1847-40DA-8C42-9DDC355B6329}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5C839E80-4AAD-46E7-BC8B-F0BC55AF610C}

@@ -916,11 +916,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Application\\AmazingLibraryManager.BooksCatalog.Application.csproj": {
-              "projectPath": "C:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Application\\AmazingLibraryManager.BooksCatalog.Application.csproj"
+            "c:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Application\\AmazingLibraryManager.BooksCatalog.Application.csproj": {
+              "projectPath": "c:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Application\\AmazingLibraryManager.BooksCatalog.Application.csproj"
             },
-            "C:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Infrastructure\\AmazingLibraryManager.BooksCatalog.Infrastructure.csproj": {
-              "projectPath": "C:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Infrastructure\\AmazingLibraryManager.BooksCatalog.Infrastructure.csproj"
+            "c:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Infrastructure\\AmazingLibraryManager.BooksCatalog.Infrastructure.csproj": {
+              "projectPath": "c:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Infrastructure\\AmazingLibraryManager.BooksCatalog.Infrastructure.csproj"
             }
           }
         }

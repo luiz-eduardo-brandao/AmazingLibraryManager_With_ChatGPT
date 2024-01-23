@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.APIGateway\\AmazingLibraryManager.APIGateway.csproj": {}
+    "C:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.APIGateway\\AmazingLibraryManager.APIGateway.csproj": {}
   },
   "projects": {
-    "c:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.APIGateway\\AmazingLibraryManager.APIGateway.csproj": {
+    "C:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.APIGateway\\AmazingLibraryManager.APIGateway.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.APIGateway\\AmazingLibraryManager.APIGateway.csproj",
+        "projectUniqueName": "C:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.APIGateway\\AmazingLibraryManager.APIGateway.csproj",
         "projectName": "AmazingLibraryManager.APIGateway",
-        "projectPath": "c:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.APIGateway\\AmazingLibraryManager.APIGateway.csproj",
+        "projectPath": "C:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.APIGateway\\AmazingLibraryManager.APIGateway.csproj",
         "packagesPath": "C:\\Users\\Luiz Brandão\\.nuget\\packages\\",
-        "outputPath": "c:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.APIGateway\\obj\\",
+        "outputPath": "C:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.APIGateway\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -22,14 +22,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net7.0"
         ],
         "sources": {
+          "http://nuget.signa.net.br/webapi/nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {}
           }
         },
@@ -40,20 +41,12 @@
         }
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
-            "Microsoft.AspNetCore.OpenApi": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
             "Ocelot": {
               "target": "Package",
               "version": "[22.0.1, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[6.4.0, )"
             }
           },
           "imports": [
@@ -75,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
