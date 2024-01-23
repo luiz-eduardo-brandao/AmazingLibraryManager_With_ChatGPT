@@ -1,8 +1,9 @@
-﻿using AmazingLibraryManager.BooksCatalog.Core.ValueObjects;
+﻿using AmazingLibraryManager.BooksCatalog.Core.Events;
+using AmazingLibraryManager.BooksCatalog.Core.ValueObjects;
 
 namespace AmazingLibraryManager.BooksCatalog.Core.Entities
 {
-    public class Book : BaseEntity
+    public class Book : AggregateRoot
     {
         public Book(Book book) : base()
         {
@@ -41,16 +42,8 @@ namespace AmazingLibraryManager.BooksCatalog.Core.Entities
             SubTitle = book.SubTitle;
             Author = book.Author;
             PublishDate = book.PublishDate;
-        }
 
-        public void UpdateReview(Book book) 
-        {
-            Id = book.Id;
-            Title = book.Title;
-            SubTitle = book.SubTitle;
-            Author = book.Author;
-            PublishDate = book.PublishDate;
-            Reviews = book.Reviews;
+            AddEvent(new BookUpdated(book));
         }
 
         public void AddReview(BookReview review) 

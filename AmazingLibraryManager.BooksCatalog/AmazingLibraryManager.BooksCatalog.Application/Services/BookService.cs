@@ -3,6 +3,7 @@ using AmazingLibraryManager.BooksCatalog.Application.Interfaces;
 using AmazingLibraryManager.BooksCatalog.Application.MappingExtensions;
 using AmazingLibraryManager.BooksCatalog.Application.ViewModels;
 using AmazingLibraryManager.BooksCatalog.Core.Entities;
+using AmazingLibraryManager.BooksCatalog.Core.Events;
 using AmazingLibraryManager.BooksCatalog.Core.Repositories;
 using AmazingLibraryManager.BooksCatalog.Core.ValueObjects;
 
@@ -10,10 +11,12 @@ namespace AmazingLibraryManager.BooksCatalog.Application.Services
 {
     public class BookService : IBookService
     {
+        private readonly IEventBus _bus;
         private readonly IBookRepository _bookRepository;
 
-        public BookService(IBookRepository bookRepository)
+        public BookService(IEventBus bus, IBookRepository bookRepository)
         {
+            _bus = bus;
             _bookRepository = bookRepository;
         }
 
@@ -62,6 +65,11 @@ namespace AmazingLibraryManager.BooksCatalog.Application.Services
             var book = new Book(model.Id, model.Title, model.SubTitle, model.Author, model.PublishDate);
 
             await _bookRepository.UpdateBookAsync(book);
+
+            foreach (var @event in book.Events) 
+            {
+                _bus.Publish(@event);
+            }
 
             return book.ToBookViewModel();
         }

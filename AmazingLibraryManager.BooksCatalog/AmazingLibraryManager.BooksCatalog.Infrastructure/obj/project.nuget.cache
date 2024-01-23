@@ -1,10 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "l8Vs82B4M5WXaqimqKthTaH/fAv/EZfU8V2tUmTB630tiwgFEMLJJl5ejfcqQaIwGyZFbnWJpa5T8k2xK21Ubg==",
+  "dgSpecHash": "dKwGoTbE64BIkmG/eRBkpiPU04txVq/H5hn89fiLfPL7JZeYRGQwiVSY3Pl6EBF5jkiH/6FqP/pyayUzH+0LJw==",
   "success": true,
   "projectFilePath": "C:\\edu\\GIT\\AmazingLibraryManager_With_ChatGPT\\AmazingLibraryManager.BooksCatalog\\AmazingLibraryManager.BooksCatalog.Infrastructure\\AmazingLibraryManager.BooksCatalog.Infrastructure.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Luiz Brandão\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+    "C:\\Users\\Luiz Brandão\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\Luiz Brandão\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\Luiz Brandão\\.nuget\\packages\\rabbitmq.client\\6.8.1\\rabbitmq.client.6.8.1.nupkg.sha512",
+    "C:\\Users\\Luiz Brandão\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\Luiz Brandão\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512"
   ],
   "logs": [
     {
