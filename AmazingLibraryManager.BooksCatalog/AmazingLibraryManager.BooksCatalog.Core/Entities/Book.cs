@@ -33,6 +33,8 @@ namespace AmazingLibraryManager.BooksCatalog.Core.Entities
             Validate(title, subTitle, author, publishDate);
 
             Id = id;
+
+            AddEvent(new BookUpdated(Id, Title, SubTitle, Author, PublishDate));
         }
 
         public void Update(Book book) 
@@ -42,8 +44,6 @@ namespace AmazingLibraryManager.BooksCatalog.Core.Entities
             SubTitle = book.SubTitle;
             Author = book.Author;
             PublishDate = book.PublishDate;
-
-            AddEvent(new BookUpdated(book));
         }
 
         public void AddReview(BookReview review) 

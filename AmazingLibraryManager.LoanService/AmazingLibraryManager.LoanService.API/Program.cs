@@ -1,3 +1,4 @@
+using AmazingLibraryManager.LoanService.API.Consumers;
 using AmazingLibraryManager.LoanService.API.DataAccess.RefitConfiguration;
 using AmazingLibraryManager.LoanService.API.Domain.Repositories;
 using AmazingLibraryManager.LoanService.API.Infrastructure.EventBus;
@@ -8,6 +9,8 @@ using AmazingLibraryManager.LoanService.API.Services.IServices;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddHostedService<BookUpdatedConsumer>();
+
 builder.Services.AddExternalApiClients(builder.Configuration);
 
 builder.Services.AddScoped<IEventBus, RabbitMqService>();

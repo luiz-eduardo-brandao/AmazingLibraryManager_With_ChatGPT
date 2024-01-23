@@ -4,13 +4,13 @@ namespace AmazingLibraryManager.BooksCatalog.Core.Events
 {
     public class BookUpdated : IEvent
     {
-        public BookUpdated(Book book)
+        public BookUpdated(Guid id, string title, string subTitle, string author, DateTime publishDate)
         {
-            Id = book.Id;
-            Title = book.Title;
-            SubTitle = book.SubTitle;
-            Author = book.Author;
-            PublishDate = book.PublishDate;
+            Id = id;
+            Title = title;
+            SubTitle = subTitle;
+            Author = author;
+            PublishDate = publishDate;
         }
 
         public Guid Id { get; set; }

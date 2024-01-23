@@ -29,6 +29,8 @@ namespace AmazingLibraryManager.BooksCatalog.Infrastructure.EventBus
         {
             var routingKey = @event.GetType().Name.ToDashCase();
 
+            System.Console.WriteLine(routingKey);
+
             var json = JsonConvert.SerializeObject(@event);
             var bytes = Encoding.UTF8.GetBytes(json);
 
