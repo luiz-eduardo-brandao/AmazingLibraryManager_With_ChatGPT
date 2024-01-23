@@ -11,17 +11,15 @@ namespace AmazingLibraryManager.BooksCatalog.Infrastructure.Persistence
 
         public BookRepository()
         {
-            var reviews = new List<BookReview>();
-
             _books = new List<Book> 
             {
-                new Book(Guid.NewGuid(), "Harry Potter", "E a Pedra Filosofal", "J.K Rolling", DateTime.Today.AddYears(-20), reviews),
-                new Book(Guid.NewGuid(), "Harry Potter", "E a Câmara Secreta", "J.K Rolling", DateTime.Today.AddYears(-19), reviews),
-                new Book(Guid.NewGuid(), "Harry Potter", "E o Prisioneiro de Askaban", "J.K Rolling", DateTime.Today.AddYears(-18), reviews),
-                new Book(Guid.NewGuid(), "Harry Potter", "E o Cálice de Fogo", "J.K Rolling", DateTime.Today.AddYears(-17), reviews),
-                new Book(Guid.NewGuid(), "Harry Potter", "E a Ordem da Fênix", "J.K Rolling", DateTime.Today.AddYears(-16), reviews),
-                new Book(Guid.NewGuid(), "Harry Potter", "E o Enigma do Princípe", "J.K Rolling", DateTime.Today.AddYears(-15), reviews),
-                new Book(Guid.NewGuid(), "Harry Potter", "E as Relíquias da Morte", "J.K Rolling", DateTime.Today.AddYears(-14), reviews)
+                new Book(Guid.NewGuid(), "Harry Potter", "E a Pedra Filosofal", "J.K Rolling", DateTime.Today.AddYears(-20), new List<BookReview>()),
+                new Book(Guid.NewGuid(), "Harry Potter", "E a Câmara Secreta", "J.K Rolling", DateTime.Today.AddYears(-19), new List<BookReview>()),
+                new Book(Guid.NewGuid(), "Harry Potter", "E o Prisioneiro de Askaban", "J.K Rolling", DateTime.Today.AddYears(-18), new List<BookReview>()),
+                new Book(Guid.NewGuid(), "Harry Potter", "E o Cálice de Fogo", "J.K Rolling", DateTime.Today.AddYears(-17), new List<BookReview>()),
+                new Book(Guid.NewGuid(), "Harry Potter", "E a Ordem da Fênix", "J.K Rolling", DateTime.Today.AddYears(-16), new List<BookReview>()),
+                new Book(Guid.NewGuid(), "Harry Potter", "E o Enigma do Princípe", "J.K Rolling", DateTime.Today.AddYears(-15), new List<BookReview>()),
+                new Book(Guid.NewGuid(), "Harry Potter", "E as Relíquias da Morte", "J.K Rolling", DateTime.Today.AddYears(-14), new List<BookReview>())
             };    
         }
 
@@ -39,8 +37,7 @@ namespace AmazingLibraryManager.BooksCatalog.Infrastructure.Persistence
 
         public Task<Book?> GetBookByIdAsync(Guid id)
         {
-            var result = _books.SingleOrDefault(b => b.Id == id 
-                && !b.IsDeleted );
+            var result = _books.SingleOrDefault(b => b.Id == id);
 
             return Task.FromResult(result);
         }
@@ -89,9 +86,22 @@ namespace AmazingLibraryManager.BooksCatalog.Infrastructure.Persistence
 
         public async Task AddBookReview(Guid bookId, BookReview review)
         {
-            var result = await GetBookByIdAsync(bookId);
+            var result = _books.SingleOrDefault(b => b.Id == bookId);
 
             result.AddReview(review);
+
+            // result.Reviews.Add(review);
+
+            // result.UpdateReview(result);
+
+            // if (result is null) 
+            // {
+            //     result = new List<BookReview>() {review};
+            // }
+            // else 
+            // {
+            //     result.Add(review);
+            // }
         }
 
         public async Task RegisterBookLoan(Guid bookId) 

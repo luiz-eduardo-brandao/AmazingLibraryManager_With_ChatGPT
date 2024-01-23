@@ -43,6 +43,16 @@ namespace AmazingLibraryManager.BooksCatalog.Core.Entities
             PublishDate = book.PublishDate;
         }
 
+        public void UpdateReview(Book book) 
+        {
+            Id = book.Id;
+            Title = book.Title;
+            SubTitle = book.SubTitle;
+            Author = book.Author;
+            PublishDate = book.PublishDate;
+            Reviews = book.Reviews;
+        }
+
         public void AddReview(BookReview review) 
         {
             Reviews.Add(review);

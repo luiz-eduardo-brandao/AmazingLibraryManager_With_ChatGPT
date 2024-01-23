@@ -1,5 +1,7 @@
 ﻿using AmazingLibraryManager.BooksCatalog.Application.InputModels;
 using AmazingLibraryManager.BooksCatalog.Application.Interfaces;
+using AmazingLibraryManager.BooksCatalog.Application.MappingExtensions;
+using AmazingLibraryManager.BooksCatalog.Application.ViewModels;
 using AmazingLibraryManager.BooksCatalog.Core.Entities;
 using AmazingLibraryManager.BooksCatalog.Core.Repositories;
 using AmazingLibraryManager.BooksCatalog.Core.ValueObjects;
@@ -15,41 +17,53 @@ namespace AmazingLibraryManager.BooksCatalog.Application.Services
             _bookRepository = bookRepository;
         }
 
-        public async Task<List<Book>> GetAllBooks()
+        public async Task<List<BookViewModel>> GetAllBooks()
         {
-            return await _bookRepository.GetAllBooks();
+            var result = await _bookRepository.GetAllBooks();
+
+            if(result is null) throw new InvalidOperationException("There are no books.");
+
+            var bookViewModelList = result.Select(b => b.ToBookViewModel()).ToList();
+
+            return bookViewModelList;
         }
 
-        public async Task<List<Book>> GetAvailibleBooks()
+        public async Task<List<BookViewModel>> GetAvailibleBooks()
         {
-            return await _bookRepository.GetAvailibleBooks();
+            var result = await _bookRepository.GetAvailibleBooks();
+
+            if(result is null) throw new InvalidOperationException("There are no availible books.");
+
+            var bookViewModelList = result.Select(b => b.ToBookViewModel()).ToList();
+
+            return bookViewModelList;
         }
 
-        public async Task<Book?> GetById(Guid bookId)
+        public async Task<BookViewModel?> GetById(Guid bookId)
         {
             var book = await _bookRepository.GetBookByIdAsync(bookId);
 
             VerifyBookExists(book);
 
-            return book;
+            return book.ToBookViewModel();
         }
 
-        public async Task<Book> AddBook(InsertBookInputModel model)
+        public async Task<BookViewModel> AddBook(InsertBookInputModel model)
         {
             var book = new Book(model.ToEntity());
 
             await _bookRepository.AddBookAsync(book);
 
-            return book;
+            return book.ToBookViewModel();
         }
 
-        public async Task<Book> UpdateBook(InsertBookInputModel model)
+        public async Task<BookViewModel> UpdateBook(InsertBookInputModel model)
         {
             var book = new Book(model.Id, model.Title, model.SubTitle, model.Author, model.PublishDate);
 
             await _bookRepository.UpdateBookAsync(book);
 
-            return book;
+            return book.ToBookViewModel();
         }
 
         public async Task DeleteBook(Guid id) 

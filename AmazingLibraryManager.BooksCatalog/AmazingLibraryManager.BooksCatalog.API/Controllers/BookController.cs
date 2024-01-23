@@ -18,30 +18,26 @@ namespace AmazingLibraryManager.BooksCatalog.API.Controllers
         [HttpGet("availible")]
         public async Task<IActionResult> GetAvailible()
         {
-            var result = await _bookService.GetAvailibleBooks();
-
-            if (result?.Count() > 0) 
-            { 
-                return Ok(result);
-            }
-            else
+            try
             {
-                return BadRequest("No records found.");
+                return Ok(await _bookService.GetAvailibleBooks());
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
             }
         }
 
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var result = await _bookService.GetAllBooks();
-
-            if (result?.Count() > 0) 
-            { 
-                return Ok(result);
-            }
-            else
+            try
             {
-                return BadRequest("No records found.");
+                return Ok(await _bookService.GetAllBooks());
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
             }
         }
 
@@ -50,16 +46,7 @@ namespace AmazingLibraryManager.BooksCatalog.API.Controllers
         {
             try
             {
-                var book = await _bookService.GetById(id);
-
-                if (book != null)
-                {
-                    return Ok(book);
-                }
-                else
-                {
-                    return NotFound("This Book doesn't exist.");
-                }
+                return Ok(await _bookService.GetById(id));
             }
             catch (Exception ex)
             {
