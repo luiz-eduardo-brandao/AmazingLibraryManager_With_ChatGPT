@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AmazingLibraryManager.BooksCatalog.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5263bc64297316476c6c5884e5659ea0d654adc7")]
 [assembly: System.Reflection.AssemblyProductAttribute("AmazingLibraryManager.BooksCatalog.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AmazingLibraryManager.BooksCatalog.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

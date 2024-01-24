@@ -1,0 +1,6 @@
+@AmazingLibraryManager.ChatGPT.API_HostAddress = http://localhost:5226
+
+GET {{AmazingLibraryManager.ChatGPT.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

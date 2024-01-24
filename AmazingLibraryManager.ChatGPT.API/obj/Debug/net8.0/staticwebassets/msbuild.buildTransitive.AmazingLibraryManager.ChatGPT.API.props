@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\AmazingLibraryManager.ChatGPT.API.props" />
+</Project>

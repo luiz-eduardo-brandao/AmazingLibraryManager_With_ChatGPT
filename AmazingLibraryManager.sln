@@ -31,7 +31,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmazingLibraryManager.Books
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AmazingLibraryManager.APIGateway", "AmazingLibraryManager.APIGateway", "{DA3C6944-1847-40DA-8C42-9DDC355B6329}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazingLibraryManager.APIGateway", "AmazingLibraryManager.APIGateway\AmazingLibraryManager.APIGateway.csproj", "{9FCD0DD9-9EE6-477B-9BFB-6D3017CBC986}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmazingLibraryManager.APIGateway", "AmazingLibraryManager.APIGateway\AmazingLibraryManager.APIGateway.csproj", "{9FCD0DD9-9EE6-477B-9BFB-6D3017CBC986}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AmazingLibrayrManager.ChatGPT", "AmazingLibrayrManager.ChatGPT", "{1CDD7AA2-C6B0-40A4-ACDD-64333E160A1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazingLibraryManager.ChatGPT.API", "AmazingLibraryManager.ChatGPT.API\AmazingLibraryManager.ChatGPT.API.csproj", "{7E795A2F-77DD-426E-A3BF-47DB4896A93D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -83,6 +87,10 @@ Global
 		{9FCD0DD9-9EE6-477B-9BFB-6D3017CBC986}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9FCD0DD9-9EE6-477B-9BFB-6D3017CBC986}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9FCD0DD9-9EE6-477B-9BFB-6D3017CBC986}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E795A2F-77DD-426E-A3BF-47DB4896A93D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E795A2F-77DD-426E-A3BF-47DB4896A93D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E795A2F-77DD-426E-A3BF-47DB4896A93D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E795A2F-77DD-426E-A3BF-47DB4896A93D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -99,6 +107,7 @@ Global
 		{C6AF4740-ABD7-4C67-A5D0-D64F0F35CD43} = {72DE1196-8A2D-4A60-A71A-FF10D9191A4C}
 		{09F50C02-CC19-433E-A7A7-29EF0AF1D57B} = {B98AEA45-853D-4B79-828F-936A7057A2C3}
 		{9FCD0DD9-9EE6-477B-9BFB-6D3017CBC986} = {DA3C6944-1847-40DA-8C42-9DDC355B6329}
+		{7E795A2F-77DD-426E-A3BF-47DB4896A93D} = {1CDD7AA2-C6B0-40A4-ACDD-64333E160A1E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5C839E80-4AAD-46E7-BC8B-F0BC55AF610C}
