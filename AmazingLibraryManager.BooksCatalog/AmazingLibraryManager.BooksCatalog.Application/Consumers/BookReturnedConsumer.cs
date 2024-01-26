@@ -12,15 +12,15 @@ using RabbitMQ.Client.Events;
 
 namespace AmazingLibraryManager.BooksCatalog.Application.Consumers
 {
-    public class BookLoanedConsumer : BackgroundService
+    public class BookReturnedConsumer: BackgroundService
     {
         private IServiceProvider _serviceProvider;
         private readonly IModel _channel;
-        private const string Queue = "book.book-loaned";
+        private const string Queue = "book.book-returned";
         private const string Exchange = "book-loan";
-        private const string RoutingKey = "book-loaned";
+        private const string RoutingKey = "book-returned";
 
-        public BookLoanedConsumer(IServiceProvider serviceProvider)
+        public BookReturnedConsumer(IServiceProvider serviceProvider)
         {
             _serviceProvider = serviceProvider;
 
@@ -29,7 +29,7 @@ namespace AmazingLibraryManager.BooksCatalog.Application.Consumers
                 HostName = "localhost"
             };
 
-            var connection = connectionFactory.CreateConnection("book.book-loaned");
+            var connection = connectionFactory.CreateConnection("book.book-returned");
 
             _channel = connection.CreateModel();
 
@@ -52,7 +52,7 @@ namespace AmazingLibraryManager.BooksCatalog.Application.Consumers
 
                 Console.WriteLine(json);
 
-                await RegisterBookLoan(@event);
+                await RegisterBookReturn(@event);
 
                 _channel.BasicAck(eventArgs.DeliveryTag, false);
             };
@@ -61,8 +61,8 @@ namespace AmazingLibraryManager.BooksCatalog.Application.Consumers
 
             return Task.CompletedTask;
         }
-
-        private async Task RegisterBookLoan(BookLoaned @event) 
+        
+        private async Task RegisterBookReturn(BookLoaned @event) 
         {
             using (var scope = _serviceProvider.CreateScope()) 
             {
@@ -72,14 +72,14 @@ namespace AmazingLibraryManager.BooksCatalog.Application.Consumers
                 {
                     foreach(var bookId in @event.BookIds) 
                     {
-                        await repository.RegisterBookLoan(bookId);
+                        await repository.RegisterBookReturn(bookId);
                     }
                 }
             }
         }
     }
 
-    public class BookLoaned
+    public class BookReturn
     {
         public Guid UserId { get; set; }
         public List<Guid> BookIds { get; set; }

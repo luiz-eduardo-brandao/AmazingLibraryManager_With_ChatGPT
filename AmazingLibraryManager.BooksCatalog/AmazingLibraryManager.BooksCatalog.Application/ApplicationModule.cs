@@ -10,6 +10,7 @@ namespace AmazingLibraryManager.BooksCatalog.Application
         public static IServiceCollection AddApplication(this IServiceCollection services)
         {
             services.AddHostedService<BookLoanedConsumer>(); 
+            services.AddHostedService<BookReturnedConsumer>(); 
             services.AddScoped<IBookService, BookService>();
 
             return services;

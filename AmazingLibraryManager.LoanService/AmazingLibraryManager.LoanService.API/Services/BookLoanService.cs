@@ -101,6 +101,13 @@ namespace AmazingLibraryManager.LoanService.API.Services
                     
                 await _bookLoanRepository.ReturnBookFromLoan(userId, bookid); 
             }
+
+            _bus.Publish(new BookReturned() 
+            { 
+                UserId = userId,
+                BookIds = model.BookIds,
+                ReturnDate = DateTime.Now
+            });
         }
 
         private async Task<bool> VerifyUserAlreadyHasLoan(Guid userId) 

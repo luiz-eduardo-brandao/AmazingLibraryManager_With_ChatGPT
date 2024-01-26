@@ -108,14 +108,14 @@ namespace AmazingLibraryManager.BooksCatalog.Infrastructure.Persistence
         {
             var result = _books.SingleOrDefault(b => b.Id == bookId);
 
-            result.LoanBook();
+            result?.LoanBook();
         }
 
         public async Task RegisterBookReturn(Guid bookId) 
         {
             var result = _books.SingleOrDefault(b => b.Id == bookId);
 
-            result.ReturnBook();
+            result?.ReturnBook();
         }
     }
 }
